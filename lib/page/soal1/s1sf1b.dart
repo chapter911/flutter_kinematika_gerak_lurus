@@ -56,7 +56,7 @@ class _S1Sf1bState extends State<S1Sf1b> {
                           child: Container(
                             width: double.maxFinite,
                             padding: const EdgeInsets.all(10),
-                            child: Image.asset('assets/s1sf1b.jpg'),
+                            child: Image.asset('assets/s1b.jpg'),
                           ),
                         ),
                         const SizedBox(

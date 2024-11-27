@@ -55,7 +55,7 @@ class _S1Sf1cState extends State<S1Sf1c> {
                           child: Container(
                             width: double.maxFinite,
                             padding: const EdgeInsets.all(10),
-                            child: Image.asset('assets/s1sf1a.jpg'),
+                            child: Image.asset('assets/s1a.jpg'),
                           ),
                         ),
                         Card(
@@ -69,7 +69,7 @@ class _S1Sf1cState extends State<S1Sf1c> {
                           child: Container(
                             width: double.maxFinite,
                             padding: const EdgeInsets.all(10),
-                            child: Image.asset('assets/s1tabel.jpg'),
+                            child: Image.asset('assets/s1f.jpg'),
                           ),
                         ),
                         const SizedBox(

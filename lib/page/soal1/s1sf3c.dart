@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kinematika_gerak_lurus/page/soal1/s1sf1b.dart';
-import 'package:kinematika_gerak_lurus/page/soal1/s1sf2a.dart';
 
-class S1Sf1a extends StatefulWidget {
-  const S1Sf1a({super.key});
+class S1Sf3c extends StatefulWidget {
+  const S1Sf3c({super.key});
 
   @override
-  State<S1Sf1a> createState() => _S1Sf1aState();
+  State<S1Sf3c> createState() => _S1Sf3cState();
 }
 
-class _S1Sf1aState extends State<S1Sf1a> {
+class _S1Sf3cState extends State<S1Sf3c> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +32,7 @@ class _S1Sf1aState extends State<S1Sf1a> {
                 const SizedBox(
                   width: double.maxFinite,
                   child: Text(
-                    "SOAL Scafolding No 1a.",
+                    "SOAL Scafolding No 2a.",
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
@@ -49,7 +48,7 @@ class _S1Sf1aState extends State<S1Sf1a> {
                           child: Container(
                             padding: const EdgeInsets.all(10),
                             child: const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini.\n\nBagaimana posisi benda selama interval 4 detik?"),
+                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini.\n\nBerdasarkan grafik tersebut, posisi benda selama 4 detik adalah tetap. Apa makna dari posisi benda yang tetap/ tidak berubah?"),
                           ),
                         ),
                         Card(
@@ -77,7 +76,6 @@ class _S1Sf1aState extends State<S1Sf1a> {
                               "Jawaban Anda Benar",
                               backgroundColor: Colors.green[100],
                             );
-                            Get.to(() => const S1Sf2a());
                           },
                           child: Card(
                             child: Container(
@@ -100,7 +98,7 @@ class _S1Sf1aState extends State<S1Sf1a> {
                                   Flexible(
                                     flex: 10,
                                     child: Text(
-                                      "Tetap",
+                                      "Benda diam",
                                     ),
                                   ),
                                 ]),
@@ -115,7 +113,7 @@ class _S1Sf1aState extends State<S1Sf1a> {
                               "Jawaban Anda Salah",
                               backgroundColor: Colors.red[100],
                             );
-                            Get.to(() => const S1Sf1b());
+                            Get.offAll(() => const S1Sf1b());
                           },
                           child: Card(
                             child: Container(
@@ -138,7 +136,7 @@ class _S1Sf1aState extends State<S1Sf1a> {
                                   Flexible(
                                     flex: 10,
                                     child: Text(
-                                      "Berubah.",
+                                      "Benda Bergerak.",
                                     ),
                                   ),
                                 ]),
