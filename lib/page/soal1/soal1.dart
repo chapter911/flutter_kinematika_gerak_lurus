@@ -1,0 +1,443 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:kinematika_gerak_lurus/page/footer/footer.dart';
+import 'package:kinematika_gerak_lurus/page/soal1/s1sf1a.dart';
+
+class Soal1 extends StatefulWidget {
+  const Soal1({super.key});
+
+  @override
+  State<Soal1> createState() => _Soal1State();
+}
+
+class _Soal1State extends State<Soal1> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.fill,
+                image: Image.asset('assets/splash_screen.jpg').image,
+              ),
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            child: Column(
+              children: [
+                Flexible(
+                  flex: 15,
+                  child: Column(
+                    children: [
+                      const SizedBox(
+                        width: double.maxFinite,
+                        child: Text(
+                          "SOAL No 1.",
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              Card(
+                                child: Container(
+                                  padding: const EdgeInsets.all(10),
+                                  child: const Text(
+                                      "Berikut adalah grafik hubungan posisi terhadap waktu dari gerak sebuah benda. Kalimat manakah yang merupakan penafsiran yang benar?"),
+                                ),
+                              ),
+                              Card(
+                                child: Container(
+                                  width: double.maxFinite,
+                                  padding: const EdgeInsets.all(10),
+                                  child: Image.asset('assets/soal1.jpg'),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: double.maxFinite,
+                                child: Text(
+                                  "Pilih Jawaban Anda",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () {
+                                  tampilDialog("A");
+                                },
+                                child: Card(
+                                  child: Container(
+                                    width: double.maxFinite,
+                                    padding: const EdgeInsets.all(10),
+                                    child: const IntrinsicHeight(
+                                      child: Row(children: [
+                                        Flexible(
+                                          flex: 1,
+                                          child: Center(
+                                            child: Text(
+                                              "A.",
+                                            ),
+                                          ),
+                                        ),
+                                        VerticalDivider(
+                                          color: Colors.black,
+                                          thickness: 1,
+                                        ),
+                                        Flexible(
+                                          flex: 10,
+                                          child: Text(
+                                            "Benda menggelinding di sepanjang permukaan datar. Kemudian bergerak ke depan menuruni bukit, dan akhirnya berhenti.",
+                                          ),
+                                        ),
+                                      ]),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () {
+                                  tampilDialog("B");
+                                },
+                                child: Card(
+                                  child: Container(
+                                    width: double.maxFinite,
+                                    padding: const EdgeInsets.all(10),
+                                    child: const IntrinsicHeight(
+                                      child: Row(children: [
+                                        Flexible(
+                                          flex: 1,
+                                          child: Center(
+                                            child: Text(
+                                              "B.",
+                                            ),
+                                          ),
+                                        ),
+                                        VerticalDivider(
+                                          color: Colors.black,
+                                          thickness: 1,
+                                        ),
+                                        Flexible(
+                                          flex: 10,
+                                          child: Text(
+                                            "Benda mula-mula diam. Kemudian bergerak ke depan menuruni bukit dan akhirnya berhenti.",
+                                          ),
+                                        ),
+                                      ]),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () {
+                                  tampilDialog("C");
+                                },
+                                child: Card(
+                                  child: Container(
+                                    width: double.maxFinite,
+                                    padding: const EdgeInsets.all(10),
+                                    child: const IntrinsicHeight(
+                                      child: Row(children: [
+                                        Flexible(
+                                          flex: 1,
+                                          child: Center(
+                                            child: Text(
+                                              "C.",
+                                            ),
+                                          ),
+                                        ),
+                                        VerticalDivider(
+                                          color: Colors.black,
+                                          thickness: 1,
+                                        ),
+                                        Flexible(
+                                          flex: 10,
+                                          child: Text(
+                                            "Benda bergerak dengan kecepatan tetap. Kemudian melambat dan berhenti.",
+                                          ),
+                                        ),
+                                      ]),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () {
+                                  tampilDialog("D");
+                                },
+                                child: Card(
+                                  child: Container(
+                                    width: double.maxFinite,
+                                    padding: const EdgeInsets.all(10),
+                                    child: const IntrinsicHeight(
+                                      child: Row(children: [
+                                        Flexible(
+                                          flex: 1,
+                                          child: Center(
+                                            child: Text(
+                                              "D.",
+                                            ),
+                                          ),
+                                        ),
+                                        VerticalDivider(
+                                          color: Colors.black,
+                                          thickness: 1,
+                                        ),
+                                        Flexible(
+                                          flex: 10,
+                                          child: Text(
+                                            "Benda mula-mula diam. Kemudian bergerak ke belakang dan akhirnya berhenti.",
+                                          ),
+                                        ),
+                                      ]),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () {
+                                  tampilDialog("E");
+                                },
+                                child: Card(
+                                  child: Container(
+                                    width: double.maxFinite,
+                                    padding: const EdgeInsets.all(10),
+                                    child: const IntrinsicHeight(
+                                      child: Row(children: [
+                                        Flexible(
+                                          flex: 1,
+                                          child: Center(
+                                            child: Text(
+                                              "E.",
+                                            ),
+                                          ),
+                                        ),
+                                        VerticalDivider(
+                                          color: Colors.black,
+                                          thickness: 1,
+                                        ),
+                                        Flexible(
+                                          flex: 10,
+                                          child: Text(
+                                            "Benda bergerak di sepanjang area datar, bergerak mundur menuruni bukit, dan kemudian terus bergerak.",
+                                          ),
+                                        ),
+                                      ]),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Flexible(flex: 1, child: footer),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void tampilDialog(String pilihan) {
+    if (pilihan == 'A') {
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => AlertDialog(
+          backgroundColor: Colors.red[100],
+          title: const Text('😌 Jawaban Salah'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Anda membaca grafik sebagai gambar lintasan.\n\nPerhatikan grafik hubungan posisi terhadap waktu dari gerak sebuah benda di bawah ini.',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+                Image.asset('assets/soal1.jpg'),
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Sumbu vertical menunjukan posisi benda, sedangkan sumbu horizontal menunjukan waktu. Pada waktu yang berbeda (t), dapat dilihat posisi benda (x).\n\nBagaimana memahami grafik tersebut?',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Get.to(() => const S1Sf1a()),
+              child: const Text('OK'),
+            ),
+          ],
+        ),
+      );
+    } else if (pilihan == 'B') {
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => AlertDialog(
+          backgroundColor: Colors.red[100],
+          title: const Text('😌 Jawaban Salah'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Anda sudah benar membaca grafik, ketika 4 detik pertama benda diam. Tetapi, Ketika anda melihat grafik yg turun, anda memikirkan lintasannya turun.\n\nPerhatikan grafik hubungan posisi terhadap waktu dari gerak sebuah benda di bawah ini.',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+                Image.asset('assets/soal1.jpg'),
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Sumbu vertical menunjukan posisi benda, sedangkan sumbu horizontal menunjukan waktu. Pada waktu yang berbeda (t), dapat dilihat posisi benda (x).\n\nBagaimana memahami grafik tersebut?',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Get.to(() => const S1Sf1a()),
+              child: const Text('OK'),
+            ),
+          ],
+        ),
+      );
+    } else if (pilihan == 'C') {
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => AlertDialog(
+          backgroundColor: Colors.red[100],
+          title: const Text('😌 Jawaban Salah'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Anda membaca grafik posisi terhadap waktu sebagai grafik kecepatan terhadap waktu.\n\nPerhatikan grafik hubungan posisi terhadap waktu dari gerak sebuah benda di bawah ini.',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+                Image.asset('assets/soal1.jpg'),
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Sumbu vertical menunjukan posisi benda, sedangkan sumbu horizontal menunjukan waktu. Pada waktu yang berbeda (t), dapat dilihat posisi benda (x).\n\nBagaimana memahami grafik tersebut?',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Get.to(() => const S1Sf1a()),
+              child: const Text('OK'),
+            ),
+          ],
+        ),
+      );
+    } else if (pilihan == 'D') {
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => AlertDialog(
+          backgroundColor: Colors.green[100],
+          title: const Text('😁 Jawaban Benar'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Anda telah memahami gerak benda secara keseluruhan.\n\nPerhatikan grafik posisi terhadap waktu di bawah ini.',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+                Image.asset('assets/soal1.jpg'),
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Grafik di atas dapat direpresentasikan dalam beberapa representasi.',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(onPressed: () => Get.back(), child: const Text('Lanjut'))
+          ],
+        ),
+      );
+    } else if (pilihan == 'E') {
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => AlertDialog(
+          backgroundColor: Colors.red[100],
+          title: const Text('😌 Jawaban Salah'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Anda membaca grafik sebagai gambar lintasan.\n\nPerhatikan grafik hubungan posisi terhadap waktu dari gerak sebuah benda di bawah ini.',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+                Image.asset('assets/soal1.jpg'),
+                const SizedBox(
+                  width: double.maxFinite,
+                  child: Text(
+                    'Sumbu vertical menunjukan posisi benda, sedangkan sumbu horizontal menunjukan waktu. Pada waktu yang berbeda (t), dapat dilihat posisi benda (x).\n\nBagaimana memahami grafik tersebut?',
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Get.to(() => const S1Sf1a()),
+              child: const Text('OK'),
+            ),
+          ],
+        ),
+      );
+    }
+  }
+}
