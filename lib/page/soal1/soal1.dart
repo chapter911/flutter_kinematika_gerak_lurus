@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kinematika_gerak_lurus/page/footer/footer.dart';
-import 'package:kinematika_gerak_lurus/page/soal1/s1sf1a.dart';
+import 'package:kinematika_gerak_lurus/page/soal1/extra1.dart';
 
 class Soal1 extends StatefulWidget {
   const Soal1({super.key});
@@ -287,7 +287,7 @@ class _Soal1State extends State<Soal1> {
           ),
           actions: [
             TextButton(
-              onPressed: () => Get.to(() => const S1Sf1a()),
+              onPressed: () => Get.offAll(() => const Extra1()),
               child: const Text('OK'),
             ),
           ],
@@ -324,7 +324,7 @@ class _Soal1State extends State<Soal1> {
           ),
           actions: [
             TextButton(
-              onPressed: () => Get.to(() => const S1Sf1a()),
+              onPressed: () => Get.offAll(() => const Extra1()),
               child: const Text('OK'),
             ),
           ],
@@ -361,7 +361,7 @@ class _Soal1State extends State<Soal1> {
           ),
           actions: [
             TextButton(
-              onPressed: () => Get.to(() => const S1Sf1a()),
+              onPressed: () => Get.offAll(() => const Extra1()),
               child: const Text('OK'),
             ),
           ],
@@ -432,7 +432,7 @@ class _Soal1State extends State<Soal1> {
           ),
           actions: [
             TextButton(
-              onPressed: () => Get.to(() => const S1Sf1a()),
+              onPressed: () => Get.offAll(() => const Extra1()),
               child: const Text('OK'),
             ),
           ],
