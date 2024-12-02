@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kinematika_gerak_lurus/page/footer/footer.dart';
+import 'package:kinematika_gerak_lurus/page/soal1/explanation1.dart';
 import 'package:kinematika_gerak_lurus/page/soal1/extra1.dart';
 
 class Soal1 extends StatefulWidget {
@@ -397,7 +398,9 @@ class _Soal1State extends State<Soal1> {
             ),
           ),
           actions: [
-            TextButton(onPressed: () => Get.back(), child: const Text('Lanjut'))
+            TextButton(
+                onPressed: () => Get.offAll(() => const Explanation1()),
+                child: const Text('Lanjut'))
           ],
         ),
       );
