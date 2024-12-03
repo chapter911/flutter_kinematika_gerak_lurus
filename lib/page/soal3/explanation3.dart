@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:kinematika_gerak_lurus/page/soal2/soal2.dart';
-import 'package:kinematika_gerak_lurus/page/soal3/soal3.dart';
 
-class Explanation2 extends StatefulWidget {
-  const Explanation2({super.key});
+class Explanation3 extends StatefulWidget {
+  const Explanation3({super.key});
 
   @override
-  State<Explanation2> createState() => _Explanation2State();
+  State<Explanation3> createState() => _Explanation3State();
 }
 
-class _Explanation2State extends State<Explanation2> {
+class _Explanation3State extends State<Explanation3> {
   final _introKey = GlobalKey<IntroductionScreenState>();
 
   @override
@@ -163,7 +162,7 @@ class _Explanation2State extends State<Explanation2> {
         next: const Text('Next', style: TextStyle(fontWeight: FontWeight.w600)),
         back: const Text('Back', style: TextStyle(fontWeight: FontWeight.w600)),
         onDone: () {
-          Get.offAll(() => const Soal3());
+          Get.offAll(() => const Soal2());
         },
       ),
     );
