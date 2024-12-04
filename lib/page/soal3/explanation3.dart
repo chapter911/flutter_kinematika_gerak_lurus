@@ -29,16 +29,15 @@ class _Explanation3State extends State<Explanation3> {
               child: Column(
                 children: [
                   const Text(
-                      "Perhatikan grafik posisi-waktu untuk sebuah benda selama interval 5 detik di bawah ini."),
-                  Image.asset('assets/soal2.jpg'),
+                      "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
+                  Image.asset('assets/soal3.jpg'),
                   const Text(
-                    """Berdasarkan grafik di atas, benda mengalami tiga keadaan gerak. Keadaan pertama dari detik ke 0 sampai detik ke 2 benda bergerak secara GLB ke arah kanan. Keadaan kedua dari detik ke 2 sampai detik ke 4 benda diam. Keadaan ketiga dari detik ke 4 sampai detik ke 5 benda bergerak GLB ke arah kiri dan berhenti pada detik ke 5.
-                    \nWaktu yang diperlukan benda dari posisi 0 sampai posisi x lebih lama dibandingkan waktu yang diperlukan benda untuk bergerak mundur dari posisi x ke posisi 0. Hal ini menunjukan bahwa kecepatan benda yang bergerak maju lebih kecil dibandingkan kecepatan benda yang bergerak mundur.
-                    \nGrafik kecepatan terhadap waktu untuk benda yang bergerak GLB digambarkan sebagai garis horizontal sepanjang waktu, dengan besar kecepatan merupakan jarak vertikal dari sumbu x. semakin besar kecepatan benda maka ketinggian garis diukur dari sumbu x semakin tinggi.
-                    \nSehingga, grafik kecepatan (v) terhadap waktu (t) dapat digambarkan sebagai""",
+                    """Berdasarkan grafik di atas, benda mengalami tiga keadaan gerak. Keadaan pertama dari detik ke 0 sampai detik ke 2 benda bergerak secara GLBB diperlambat. Keadaan kedua dari detik ke 2 sampai detik ke 3 benda bergerak secara GLB. Keadaan ketiga dari detik ke 3 sampai detik ke 5 benda bergerak GLBB dipercepat. Besarnya kemiringan garis saat benda bergerak GLBB dipercepat sama dengan saat benda bergerak GLBB diperlambat.
+                    \nHal ini menunjukan bahwa besarnya percepatan benda saat bergerak GLBB dipercepat sama dengan saat benda bergerak GLBB diperlambat. Pada GLBB diperlambat  nilai percepatan berharga negative.
+                    \nSehingga, grafik percepatan (a) terhadap waktu (t) dapat digambarkan sebagai""",
                     textAlign: TextAlign.justify,
                   ),
-                  Image.asset('assets/soal2d.jpg'),
+                  Image.asset('assets/soal3b.jpg'),
                 ],
               ),
             ),
@@ -49,18 +48,19 @@ class _Explanation3State extends State<Explanation3> {
               child: Column(
                 children: [
                   const Text(
-                      "Perhatikan grafik posisi-waktu untuk sebuah benda selama interval 5 detik di bawah ini."),
-                  Image.asset('assets/soal2.jpg'),
+                      "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
+                  Image.asset('assets/soal3.jpg'),
                   const Text(
-                    """Grafik hubungan posisi terhadap waktu di atas dapat diubah dalam bentuk tabel seperti di bawah ini:""",
+                    """Grafik hubungan kecepatan terhadap waktu di atas dapat diubah dalam bentuk tabel seperti di bawah ini:""",
                     textAlign: TextAlign.justify,
                   ),
-                  Image.asset('assets/soal2f.jpg'),
+                  Image.asset('assets/soal3n.jpg'),
                   const Text(
-                      """Pada tabel diatas, dapat dilihat dari detik ke 0 sampai detik ke 1 benda berpindah sejauh 1.5 m. Dari detik ke 1 sampai detik ke 2 benda berpindah sejauh 1.5 m. Berdasarkan data tersebut, dapat disimpulkan bahwa dari detik ke 0 sampai detik ke 2, benda bergerak dengan kecepatan 1.5 m/s.
-                  \nDari detik ke 2 sampai detik ke 4, posisi benda tidak berubah. Hal ini menunjukan bahwa benda tidak bergerak (benda diam). Dari detik ke 4 sampai detik ke 5, benda berpindah sejauh –3m. Hal ini menunjukan bahwa benda bergerak dengan kecepatan -3 m/s.
-                  \nBerdasarkan data di atas, grafik kecepatan terhadap waktu dapat digambarkan sebagai berikut:"""),
-                  Image.asset('assets/soal2d.jpg'),
+                      """Pada tabel diatas, dapat dilihat dari detik ke 0 sampai detik ke 1 benda kecepatan benda berubah -1.5 m/s, dari detik ke 1 sampai detik ke 2 kecepatan benda berubah -1.5 m/s. Hal ini menunjukan bahwa dari detik ke 0 sampai detik ke 2, benda bergerak dengan percepatan -1.5 m/s2.
+                      \nDari detik ke2 sampai detik ke 3, kecepatan benda tidak berubah. Hal ini menunjukan bahwa benda bergerak secara GLB (tidak memiliki percepatan).
+                      \nDari detik ke 4 sampai detik ke 5, kecepatan benda berubah 1.5 m/s. Hal ini menunjukan bahwa dari detik ke 4 sampai detik ke 5, benda bergerak dengan percepatan 1.5 m/s2.
+                      \nBerdasarkan data di atas, grafik percepatan terhadap waktu dapat digambarkan sebagai berikut:"""),
+                  Image.asset('assets/soal3b.jpg'),
                 ],
               ),
             ),
@@ -71,19 +71,19 @@ class _Explanation3State extends State<Explanation3> {
               child: Column(
                 children: [
                   const Text(
-                      "Perhatikan grafik posisi-waktu untuk sebuah benda selama interval 5 detik di bawah ini."),
-                  Image.asset('assets/soal2.jpg'),
+                      "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
+                  Image.asset('assets/soal3.jpg'),
                   const Text(
-                    """Grafik hubungan posisi terhadap waktu di atas dapat diubah dalam bentuk diagram gerak seperti di bawah ini:""",
+                    """Grafik hubungan kecepatan terhadap waktu di atas dapat diubah dalam bentuk diagram gerak seperti di bawah ini:""",
                     textAlign: TextAlign.justify,
                   ),
-                  Image.asset('assets/soal2g.jpg'),
+                  Image.asset('assets/soal3o.jpg'),
                   const Text(
-                      """Berdasarkan gambar di atas dilihat dari detik ke 0 sampai detik ke 1 benda berpindah sejauh 1.5 m. Dari detik ke 1 sampai detik ke 2 benda berpindah sejauh 1.5 m. Berdasarkan data tersebut, dapat disimpulkan bahwa dari detik ke 0 sampai detik ke 2, benda bergerak dengan kecepatan 1.5 m/s.
-                      \nDari detik ke 2 sampai detik ke 4, posisi benda tidak berubah. Hal ini menunjukan bahwa benda tidak bergerak (benda diam).
-                      \nDari detik ke 4 sampai detik ke 5, benda berpindah sejauh –3m. Hal ini menunjukan bahwa benda bergerak dengan kecepatan -3 m/s.
-                      \nBerdasarkan data di atas, grafik kecepatan terhadap waktu dapat digambarkan sebagai berikut:"""),
-                  Image.asset('assets/soal2d.jpg'),
+                      """Berdasarkan gambar di atas, dari detik ke 0 sampai detik ke 2 terlihat panjang garis percepatan adalah sama, sedangkan panjang garis kecepatan berkurang sebesar 1.5 tiap detiknya. Hal ini menunjukan bahwa benda bergerak GLBB diperlambat dengan percepatan -1.5 m/s2.
+                      \nDari detik ke2 sampai detik ke 3, kecepatan benda tidak berubah. Hal ini menunjukan bahwa benda bergerak secara GLB (tidak memiliki percepatan).
+                      \nDari detik ke 3 sampai detik ke 5 terlihat panjang garis percepatan adalah sama, sedangkan panjang garis kecepatan bertambah sebesar 1.5 tiap detiknya. Hal ini menunjukan bahwa benda bergerak GLBB dipercepat dengan percepatan 1.5 m/s2.
+                      \nBerdasarkan data di atas, grafik percepatan terhadap waktu dapat digambarkan sebagai berikut:"""),
+                  Image.asset('assets/soal3b.jpg'),
                 ],
               ),
             ),
@@ -94,35 +94,32 @@ class _Explanation3State extends State<Explanation3> {
               child: Column(
                 children: [
                   const Text(
-                      "Perhatikan grafik posisi-waktu untuk sebuah benda selama interval 5 detik di bawah ini."),
-                  Image.asset('assets/soal2.jpg'),
+                      "Perhatikan grafik kecepatan terhadap waktu untuk sebuah benda selama interval 5 detik di bawah ini."),
+                  Image.asset('assets/soal3.jpg'),
                   const Text(
-                    """Grafik hubungan posisi terhadap waktu di atas dapat dijabarkan dalam tiga keadaan.
-                    \nKecepatan benda setiap detiknya dapat digambarkan berupa garis singgung pada grafik posisi terhadap waktu
-                    \nKeadaan pertama, dari detik ke 0 sampai detik ke 2, posisi benda bertambah setiap detiknya, dengan bentuk grafik berupa garis lurus. Hal ini menunjukan bahwa kecepatan benda dari detik ke 0 sampai detik ke 2 adalah sama. Garis singgung yang merepresentasikan kecepatan benda akan berupa garis lurus dengan kemiringan tertentu.
-                    \nSebagai contoh, kecepatan benda pada detik ke 1 dapat dilihat pada gambar di bawah ini.""",
+                    """Grafik hubungan kecepatan terhadap waktu di atas dapat dijabarkan dalam tiga keadaan.
+                    \nPercepatan benda setiap detiknya dapat digambarkan berupa garis singgung pada grafik kecepatan terhadap waktu
+                    \nKeadaan pertama, dari detik ke 0 sampai detik ke 2, kecepatan benda berkurang setiap detiknya, dengan bentuk grafik berupa garis lurus. Hal ini menunjukan bahwa percepatan benda dari detik ke 0 sampai detik ke 2 adalah sama. Garis singgung yang merepresentasikan kecepatan benda akan berupa garis lurus dengan kemiringan tertentu.
+                    \nSebagai contoh, percepatan benda pada detik ke 1 dapat dilihat pada gambar di bawah ini.""",
                     textAlign: TextAlign.justify,
                   ),
-                  Image.asset('assets/soal2h.jpg'),
-                  const Text("""(v_1 ) ⃗=(∆x) ⃗/∆t
-                      \n=(3-0)/(2-0)
-                      \n=1.5 m⁄s
-                      \nDapat dilihat pada grafik di atas garis v1 berupa garis lurus dengan kemiringan 1.5 ke arah atas, yang artinya kecepatan benda pada detik ke 1 adalah 1.5 m/s ke arah kanan.Hal ini menunjukan bahwa benda bergerak maju dengan kecepatan tetap sebesar 1.5 m/s.
-                      \nMengingat bahwa kecepatan benda pada keadaan pertama adalah sama disetiap waktunya, maka pada keadaan 1 dapat disimpulkan bahwa benda bergerak maju dengan kecepatan 1.5 m/s sampai detik ke 2.
-                      \nKeadaan kedua, dari detik ke 2 sampai detik ke 4, posisi benda tidak berubah. Garis singgung yang merepresentasikan kecepatan benda akan berupa garis mendatar dengan kemiringan 0.
-                      \nSebagai contoh, kecepatan benda pada detik ke 3 dapat dilihat pada gambar di bawah ini."""),
-                  Image.asset('assets/soal2i.jpg'),
+                  Image.asset('assets/soal3p.jpg'),
                   const Text(
-                      """Dapat dilihat pada gambar di atas, garis v3 berupa garis datar. Hal ini menunjukan bahwa kecepatan benda pada detik ke 3 adalah 0, atau benda diam.
-                      \nKeadaan ketiga, dari detik ke 4 sampai detik ke 5, posisi benda bertambah setiap detiknya, dengan bentuk grafik berupa garis lurus. Hal ini menunjukan bahwa kecepatan benda dari detik ke 4 sampai detik ke 5 adalah sama. Garis singgung yang merepresentasikan kecepatan benda akan berupa garis lurus dengan kemiringan tertentu.
-                      \nSebagai contoh, kecepatan benda pada detik ke 4.5 dapat dilihat pada gambar di bawah ini."""),
-                  Image.asset('assets/soal2j.jpg'),
+                      """Dapat dilihat pada grafik di atas garis a1 berupa garis lurus dengan kemiringan 1.5 ke arah bawah, yang artinya percepatan benda pada detik ke 1 adalah 1.5 m/s2 berlawanan arah dengan arah gerak benda.
+                  \nHal ini menunjukan bahwa benda bergerak GLBB dengan percepatan sebesar -1.5 m/s2. Mengingat bahwa percepatan benda pada keadaan pertama adalah sama disetiap waktunya, maka pada keadaan 1 dapat disimpulkan bahwa benda bergerak maju dengan percepatan -1.5 m/s2 sampai detik ke 2.
+                  \nKeadaan kedua, dari detik ke 2 sampai detik ke 3, kecepatan benda tidak berubah. Garis singgung yang merepresentasikan percepatan benda akan berupa garis mendatar dengan kemiringan 0.
+                  \nSebagai contoh, percepatan benda pada detik ke 2.5 dapat dilihat pada gamabr di bawah ini."""),
+                  Image.asset('assets/soal3q.jpg'),
                   const Text(
-                      """Dapat dilihat pada grafik di atas garis v4.5 berupa garis lurus dengan kemiringan 3 ke arah kiri, yang artinya kecepatan benda pada detik ke 4.5 adalah 3 m/s ke arah kiri.
-                      \nHal ini menunjukan bahwa benda bergerak mundur dengan kecepatan tetap sebesar 3 m/s.
-                      \nMengingat bahwa kecepatan benda pada keadaan ketiga adalah sama disetiap waktunya, maka pada keadaan 3 dapat disimpulkan bahwa benda bergerak mundur dengan kecepatan 3 m/s sampai detik ke 5.
+                      """Dapat dilihat pada gambar di atas, garis a2.5 berupa garis datar. Hal ini menunjukan bahwa percepatan benda pada detik ke 2.5 adalah 0, atau benda bergerak dengan kecepatan konstan.
+                      \nKeadaan ketiga, dari detik ke 3 sampai detik ke 5, kecepatan benda bertambah setiap detiknya, dengan bentuk grafik berupa garis lurus. Hal ini menunjukan bahwa percepatan benda dari detik ke 3 sampai detik ke 5 adalah sama. Garis singgung yang merepresentasikan kecepatan benda akan berupa garis lurus dengan kemiringan tertentu.
+                      \nSebagai contoh, percepatan benda pada detik ke 4 dapat dilihat pada gambar di bawah ini."""),
+                  Image.asset('assets/soal3r.jpg'),
+                  const Text(
+                      """Dapat dilihat pada grafik di atas garis a4 berupa garis lurus dengan kemiringan 1.5 ke arah atas, yang artinya percepatan benda pada detik ke 4 adalah 1.5 m/s2 searah dengan arah gerak benda.
+                      \nHal ini menunjukan bahwa benda bergerak GLBB dengan percepatan sebesar 1.5 m/s2. Mengingat bahwa percepatan benda pada keadaan pertama adalah sama disetiap waktunya, maka pada keadaan 3 dapat disimpulkan bahwa benda bergerak maju dengan percepatan 1.5 m/s2 sampai detik ke 5.
                       \nBerdasarkan data di atas, grafik kecepatan terhadap waktu dapat digambarkan sebagai berikut:"""),
-                  Image.asset('assets/soal2d.jpg'),
+                  Image.asset('assets/soal3b.jpg'),
                 ],
               ),
             ),
@@ -134,22 +131,17 @@ class _Explanation3State extends State<Explanation3> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                      "Perhatikan grafik posisi terhadap waktu di bawah ini."),
-                  Center(child: Image.asset('assets/soal1.jpg')),
+                      "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
+                  Image.asset('assets/soal3.jpg'),
                   const Text(
-                    """Grafik posisi terhadap waktu di atas memiliki 3 keadaan:
+                    """Grafik kecepatan terhadap waktu di atas memiliki 3 keadaan:
                     \nt = 0 sampai t = 2""",
                     textAlign: TextAlign.justify,
                   ),
-                  Center(child: Image.asset('assets/soal2k.jpg')),
+                  Center(child: Image.asset('assets/soal3s.jpg')),
                   const Text(
-                    """t = 2 sampai t = 4""",
-                    textAlign: TextAlign.justify,
-                  ),
-                  Center(child: Image.asset('assets/soal2l.jpg')),
-                  const Text(
-                      """Berdasarkan nilai kecepatan dari detik ke 0 sampai detik ke 5, maka grafik kecepatan terhadap waktu dapat digambarkan sebagai berikut:"""),
-                  Center(child: Image.asset('assets/soal2d.jpg')),
+                      """Berdasarkan nilai percepatan dari detik ke 0 sampai detik ke 5, maka grafik percepatan terhadap waktu dapat digambarkan sebagai berikut:"""),
+                  Center(child: Image.asset('assets/soal3b.jpg')),
                 ],
               ),
             ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:kinematika_gerak_lurus/page/soal2/soal2.dart';
 import 'package:kinematika_gerak_lurus/page/soal3/soal3.dart';
 
 class Explanation2 extends StatefulWidget {
