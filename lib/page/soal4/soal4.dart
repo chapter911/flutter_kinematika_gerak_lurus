@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kinematika_gerak_lurus/page/soal3/explanation3.dart';
-import 'package:kinematika_gerak_lurus/page/soal3/extra3.dart';
+import 'package:kinematika_gerak_lurus/page/soal4/explanation4.dart';
+import 'package:kinematika_gerak_lurus/page/soal4/extra4.dart';
 
 import '../footer/footer.dart';
 
-class Soal3 extends StatefulWidget {
-  const Soal3({super.key});
+class Soal4 extends StatefulWidget {
+  const Soal4({super.key});
 
   @override
-  State<Soal3> createState() => _Soal3State();
+  State<Soal4> createState() => _Soal4State();
 }
 
-class _Soal3State extends State<Soal3> {
+class _Soal4State extends State<Soal4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +39,7 @@ class _Soal3State extends State<Soal3> {
                       const SizedBox(
                         width: double.maxFinite,
                         child: Text(
-                          "SOAL No 3.",
+                          "SOAL No 4.",
                           style: TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.bold,
@@ -58,12 +58,12 @@ class _Soal3State extends State<Soal3> {
                                   child: Column(
                                     children: [
                                       const Text(
-                                        "Di bawah ini adalah grafik kecepatan-waktu untuk sebuah benda selama interval 5 detik",
+                                        "Di bawah ini adalah grafik posisi-waktu dari gerak dua benda A dan B.",
                                         textAlign: TextAlign.justify,
                                       ),
-                                      Image.asset('assets/soal3.jpg'),
+                                      Image.asset('assets/soal4.jpg'),
                                       const Text(
-                                        "Manakah dari grafik percepatan terhadap waktu berikut yang paling tepat mewakili gerak benda selama interval waktu yang sama?",
+                                        "Manakah pernyataan berikut ini yang benar?",
                                         textAlign: TextAlign.justify,
                                       ),
                                     ],
@@ -93,9 +93,9 @@ class _Soal3State extends State<Soal3> {
                                         child: Container(
                                           width: double.maxFinite,
                                           padding: const EdgeInsets.all(10),
-                                          child: IntrinsicHeight(
+                                          child: const IntrinsicHeight(
                                             child: Row(children: [
-                                              const Flexible(
+                                              Flexible(
                                                 flex: 1,
                                                 child: Center(
                                                   child: Text(
@@ -103,14 +103,14 @@ class _Soal3State extends State<Soal3> {
                                                   ),
                                                 ),
                                               ),
-                                              const VerticalDivider(
+                                              VerticalDivider(
                                                 color: Colors.black,
                                                 thickness: 1,
                                               ),
                                               Flexible(
                                                 flex: 10,
-                                                child: Image.asset(
-                                                  'assets/soal3a.jpg',
+                                                child: Text(
+                                                  "Benda B memiliki kecepatan yang lebih besar daripada benda A pada interval 0 sampai 5 detik.",
                                                 ),
                                               ),
                                             ]),
@@ -129,9 +129,9 @@ class _Soal3State extends State<Soal3> {
                                         child: Container(
                                           width: double.maxFinite,
                                           padding: const EdgeInsets.all(10),
-                                          child: IntrinsicHeight(
+                                          child: const IntrinsicHeight(
                                             child: Row(children: [
-                                              const Flexible(
+                                              Flexible(
                                                 flex: 1,
                                                 child: Center(
                                                   child: Text(
@@ -139,14 +139,14 @@ class _Soal3State extends State<Soal3> {
                                                   ),
                                                 ),
                                               ),
-                                              const VerticalDivider(
+                                              VerticalDivider(
                                                 color: Colors.black,
                                                 thickness: 1,
                                               ),
                                               Flexible(
                                                 flex: 10,
-                                                child: Image.asset(
-                                                  'assets/soal3b.jpg',
+                                                child: Text(
+                                                  "Pada saat 5 detik, benda A memiliki kecepatan yang lebih besar daripada benda B.",
                                                 ),
                                               ),
                                             ]),
@@ -169,9 +169,9 @@ class _Soal3State extends State<Soal3> {
                                         child: Container(
                                           width: double.maxFinite,
                                           padding: const EdgeInsets.all(10),
-                                          child: IntrinsicHeight(
+                                          child: const IntrinsicHeight(
                                             child: Row(children: [
-                                              const Flexible(
+                                              Flexible(
                                                 flex: 1,
                                                 child: Center(
                                                   child: Text(
@@ -179,14 +179,14 @@ class _Soal3State extends State<Soal3> {
                                                   ),
                                                 ),
                                               ),
-                                              const VerticalDivider(
+                                              VerticalDivider(
                                                 color: Colors.black,
                                                 thickness: 1,
                                               ),
                                               Flexible(
                                                 flex: 10,
-                                                child: Image.asset(
-                                                  'assets/soal3c.jpg',
+                                                child: Text(
+                                                  "Kecepatan benda B sama dengan kecepatan benda A pada saat 5 detik.",
                                                 ),
                                               ),
                                             ]),
@@ -205,9 +205,9 @@ class _Soal3State extends State<Soal3> {
                                         child: Container(
                                           width: double.maxFinite,
                                           padding: const EdgeInsets.all(10),
-                                          child: IntrinsicHeight(
+                                          child: const IntrinsicHeight(
                                             child: Row(children: [
-                                              const Flexible(
+                                              Flexible(
                                                 flex: 1,
                                                 child: Center(
                                                   child: Text(
@@ -215,14 +215,14 @@ class _Soal3State extends State<Soal3> {
                                                   ),
                                                 ),
                                               ),
-                                              const VerticalDivider(
+                                              VerticalDivider(
                                                 color: Colors.black,
                                                 thickness: 1,
                                               ),
                                               Flexible(
                                                 flex: 10,
-                                                child: Image.asset(
-                                                  'assets/soal3d.jpg',
+                                                child: Text(
+                                                  "Benda A bergerak dengan kecepatan konstan.",
                                                 ),
                                               ),
                                             ]),
@@ -245,9 +245,9 @@ class _Soal3State extends State<Soal3> {
                                         child: Container(
                                           width: double.maxFinite,
                                           padding: const EdgeInsets.all(10),
-                                          child: IntrinsicHeight(
+                                          child: const IntrinsicHeight(
                                             child: Row(children: [
-                                              const Flexible(
+                                              Flexible(
                                                 flex: 1,
                                                 child: Center(
                                                   child: Text(
@@ -255,14 +255,14 @@ class _Soal3State extends State<Soal3> {
                                                   ),
                                                 ),
                                               ),
-                                              const VerticalDivider(
+                                              VerticalDivider(
                                                 color: Colors.black,
                                                 thickness: 1,
                                               ),
                                               Flexible(
                                                 flex: 10,
-                                                child: Image.asset(
-                                                  'assets/soal3e.jpg',
+                                                child: Text(
+                                                  "Benda B bergerak dipercepat.",
                                                 ),
                                               ),
                                             ]),
@@ -305,16 +305,16 @@ class _Soal3State extends State<Soal3> {
                 const SizedBox(
                   width: double.maxFinite,
                   child: Text(
-                    """Anda membaca grafik kecepatan terhadap waktu sebagai grafik percepatan terhadap waktu.
-                    \nPerhatikan grafik kecepatan-waktu di bawah ini.""",
+                    """Anda menganggap kecepatan benda lebih cepat jika garisnya lebih pendek.
+                    \nPerhatikan grafik posisi-waktu dari gerak dua benda A dan B di bawah ini""",
                     textAlign: TextAlign.justify,
                   ),
                 ),
-                Image.asset('assets/soal3.jpg'),
+                Image.asset('assets/soal4.jpg'),
                 const SizedBox(
                   width: double.maxFinite,
                   child: Text(
-                    """Grafik di atas merupakan grafik kecepatan terhadap waktu. Pada waktu yang berbeda (t), dapat dilihat perubahan kecepatan benda (v).
+                    """Grafik di atas merupakan grafik posisi terhadap waktu dari gerak dua buah benda.
                     \nBagaimana memahami grafik tersebut?""",
                     textAlign: TextAlign.justify,
                   ),
@@ -324,7 +324,7 @@ class _Soal3State extends State<Soal3> {
           ),
           actions: [
             TextButton(
-              onPressed: () => Get.offAll(() => const Extra3()),
+              onPressed: () => Get.offAll(() => const Extra4()),
               child: const Text('OK'),
             ),
           ],
@@ -344,15 +344,15 @@ class _Soal3State extends State<Soal3> {
                 const SizedBox(
                   width: double.maxFinite,
                   child: Text(
-                    """Anda telah memahami keseluruhan gerak benda. Perhatikan grafik kecepatan-waktu untuk sebuah benda selama interval 5 detik di bawah ini.""",
+                    """Anda sudah benar menbaca grafik posisi terhadap waktu. """,
                     textAlign: TextAlign.justify,
                   ),
                 ),
-                Image.asset('assets/soal3.jpg'),
+                Image.asset('assets/soal4.jpg'),
                 const SizedBox(
                   width: double.maxFinite,
                   child: Text(
-                    """Grafik di atas dapat direpresentasikan dalam beberapa representasi. Ayo klik tombol di bawah ini untuk mengetahui penjelasan grafik tersebut dalam beberapa representasi yang disediakan.""",
+                    """Silahkan memilih penjelasan grafik tersebut dari berbagai pilihan representasi yang disediakan.""",
                     textAlign: TextAlign.justify,
                   ),
                 ),
@@ -361,7 +361,7 @@ class _Soal3State extends State<Soal3> {
           ),
           actions: [
             TextButton(
-              onPressed: () => Get.offAll(() => const Explanation3()),
+              onPressed: () => Get.offAll(() => const Explanation4()),
               child: const Text('Lanjut'),
             ),
           ],
@@ -381,16 +381,16 @@ class _Soal3State extends State<Soal3> {
                 const SizedBox(
                   width: double.maxFinite,
                   child: Text(
-                    """Anda sudah benar membaca grafik bahwa percepatan benda pada interval waktu 0 ≤ t ≤ 2 dan 3 ≤ t ≤ 5 adalah konstan. Sedangkan percepatan benda pada interval waktu 2 ≤ t ≤ 3 adalah nol. Tetapi, anda tidak tidak cermat melihat arah kemiringan garis pada grafik kecepatan terhadap waktu untuk interval 0 ≤ t ≤ 2.
-                    \nPerhatikan grafik kecepatan-waktu di bawah ini.""",
+                    """Anda salah menafsirkan grafik posisi terhadap waktu sebagai grafik kecepatan terhadap waktu.
+                    \nPerhatikan grafik posisi-waktu dari gerak dua benda A dan B di bawah ini""",
                     textAlign: TextAlign.justify,
                   ),
                 ),
-                Image.asset('assets/soal3.jpg'),
+                Image.asset('assets/soal4.jpg'),
                 const SizedBox(
                   width: double.maxFinite,
                   child: Text(
-                    """Grafik di atas merupakan grafik kecepatan terhadap waktu. Pada waktu yang berbeda (t), dapat dilihat  perubahan kecepatan benda (v).
+                    """Grafik di atas merupakan grafik posisi terhadap waktu dari gerak dua buah benda.
                     \nBagaimana memahami grafik tersebut?""",
                     textAlign: TextAlign.justify,
                   ),
@@ -400,7 +400,7 @@ class _Soal3State extends State<Soal3> {
           ),
           actions: [
             TextButton(
-              onPressed: () => Get.offAll(() => const Extra3()),
+              onPressed: () => Get.offAll(() => const Extra4()),
               child: const Text('OK'),
             ),
           ],
@@ -419,21 +419,21 @@ class _Soal3State extends State<Soal3> {
               const SizedBox(
                 width: double.maxFinite,
                 child: Text(
-                  """Anda sudah benar membaca grafik bahwa percepatan benda pada interval waktu 3 ≤ t ≤ 5 adalah konstan. Tetapi, anda tidak tidak cermat melihat besar kemiringan garis pada grafik kecepatan terhadap waktu untuk interval 3 ≤ t ≤ 5. Selain itu, anda juga salah menafsirkan percepatan benda pada interval waktu 0 ≤ t ≤ 2 dan 2 ≤ t ≤ 3. Anda tidak memperhatikan besar dan arah kemiringan garis pada grafik kecepatan terhadap waktu untuk interval 0 ≤ t ≤ 2 dan 2 ≤ t ≤ 3.
-                  \nPerhatikan grafik kecepatan-waktu di bawah ini.""",
+                  """Anda salah menafsirkan jenis gerak berdasarkan grafik posisi terhadap waktu
+                  \nPerhatikan grafik posisi-waktu dari gerak dua benda A dan B di bawah ini""",
                   textAlign: TextAlign.justify,
                 ),
               ),
               Image.asset('assets/soal3.jpg'),
               const Text(
-                """Grafik di atas merupakan grafik kecepatan terhadap waktu. Pada waktu yang berbeda (t), dapat dilihat  perubahan kecepatan benda (v).
+                """Grafik di atas merupakan grafik posisi terhadap waktu dari gerak dua buah benda.
                 \nBagaimana memahami grafik tersebut?""",
               )
             ],
           ),
           actions: [
             TextButton(
-                onPressed: () => Get.offAll(() => const Extra3()),
+                onPressed: () => Get.offAll(() => const Extra4()),
                 child: const Text('OK'))
           ],
         ),
@@ -452,8 +452,8 @@ class _Soal3State extends State<Soal3> {
                 const SizedBox(
                   width: double.maxFinite,
                   child: Text(
-                    """Anda sudah benar membaca grafik bahwa percepatan benda pada interval waktu 2 ≤ t ≤ 3 adalah konstan dan bernilai 0. Tetapi, salah menafsirkan percepatan benda pada interval waktu 0 ≤ t ≤ 2 dan 3 ≤ t ≤ 5. Anda tidak memperhatikan besar dan arah kemiringan garis pada grafik kecepatan terhadap waktu untuk interval 0 ≤ t ≤ 2 dan 3 ≤ t ≤ 5. 
-                    \nPerhatikan grafik kecepatan-waktu di bawah ini.""",
+                    """Anda salah menafsirkan jenis gerak berdasarkan grafik posisi terhadap waktu
+                    \nPerhatikan grafik posisi-waktu dari gerak dua benda A dan B di bawah ini""",
                     textAlign: TextAlign.justify,
                   ),
                 ),
@@ -461,7 +461,7 @@ class _Soal3State extends State<Soal3> {
                 const SizedBox(
                   width: double.maxFinite,
                   child: Text(
-                    """Grafik di atas merupakan grafik kecepatan terhadap waktu. Pada waktu yang berbeda (t), dapat dilihat  perubahan kecepatan benda (v).
+                    """Grafik di atas merupakan grafik posisi terhadap waktu dari gerak dua buah benda.
                     \nBagaimana memahami grafik tersebut?""",
                     textAlign: TextAlign.justify,
                   ),
@@ -471,7 +471,7 @@ class _Soal3State extends State<Soal3> {
           ),
           actions: [
             TextButton(
-              onPressed: () => Get.offAll(() => const Extra3()),
+              onPressed: () => Get.offAll(() => const Extra4()),
               child: const Text('OK'),
             ),
           ],
