@@ -18,7 +18,7 @@ var footer = Row(
               width: double.maxFinite,
               padding: const EdgeInsets.all(10),
               child: Text(
-                "SKOR ANDA : ${Prefs.readInt('score') ?? 0}",
+                "SKOR ANDA : ${(Prefs.readInt('score1') ?? 0) + (Prefs.readInt('score2') ?? 0) + (Prefs.readInt('score3') ?? 0) + (Prefs.readInt('score4') ?? 0) + (Prefs.readInt('score5') ?? 0)}",
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,

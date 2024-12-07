@@ -83,8 +83,8 @@ class _Extra5State extends State<Extra5> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "v=0.75t^2+4t", false, "2a"),
-                    pilihanOption("B", "v=1.25t^2", false, "1b"),
+                    pilihanOption("A", "v=0.75t²+4t", false, "2a"),
+                    pilihanOption("B", "v=1.25t²", false, "1b"),
                     pilihanOption("C", "v=1.5t+4", false, "1b"),
                     pilihanOption("D", "v=2.5t", false, "1b"),
                   ],
@@ -203,8 +203,8 @@ class _Extra5State extends State<Extra5> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "x=0.75t^2+4t", true, "3a"),
-                    pilihanOption("B", "x=1.25t^2", false, "2a"),
+                    pilihanOption("A", "x=0.75t²+4t", true, "3a"),
+                    pilihanOption("B", "x=1.25t²", false, "2a"),
                     pilihanOption("C", "x=1.5t+4", false, "2a"),
                     pilihanOption("D", "x=2.5t", false, "2a"),
                   ],
@@ -311,7 +311,7 @@ class _Extra5State extends State<Extra5> {
                             const SizedBox(height: 10),
                             const Text(
                                 """Grafik di atas memiliki persamaan kecepatan
-                            \nx=0.75t^2+4t
+                            \nx=0.75t²+4t
                             \nBerdasarkan persamaan posisi tersebut, berapakah posisi benda pada detik ke 0?"""),
                           ],
                         ),
@@ -425,7 +425,7 @@ class _Extra5State extends State<Extra5> {
                             const SizedBox(height: 10),
                             const Text(
                                 """Grafik di atas memiliki persamaan kecepatan
-                                \nx=0.75t^2+4t
+                                \nx=0.75t²+4t
                                 \nBerdasarkan persamaan posisi tersebut, berapakah posisi benda pada detik ke 4?"""),
                           ],
                         ),
@@ -543,8 +543,8 @@ class _Extra5State extends State<Extra5> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "v=0.75t^2+4t", false, "4b"),
-                    pilihanOption("B", "v=1.25t^2", false, "4b"),
+                    pilihanOption("A", "v=0.75t²+4t", false, "4b"),
+                    pilihanOption("B", "v=1.25t²", false, "4b"),
                     pilihanOption("C", "v=1.5t+4", false, "4b"),
                     pilihanOption("D", "v=2.5t", true, "5a"),
                   ],
@@ -664,8 +664,8 @@ class _Extra5State extends State<Extra5> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "x=0.75t^2+4t", false, "5a"),
-                    pilihanOption("B", "x=1.25t^2", true, "6a"),
+                    pilihanOption("A", "x=0.75t²+4t", false, "5a"),
+                    pilihanOption("B", "x=1.25t²", true, "6a"),
                     pilihanOption("C", "x=1.5t+4", false, "5a"),
                     pilihanOption("D", "x=2.5t", false, "5a"),
                   ],
@@ -772,7 +772,7 @@ class _Extra5State extends State<Extra5> {
                             const SizedBox(height: 10),
                             const Text(
                                 """Grafik di atas memiliki persamaan kecepatan
-                                \nx=1.25t^2
+                                \nx=1.25t²
                                 \nBerdasarkan persamaan posisi tersebut, berapakah posisi benda pada detik ke 0?"""),
                           ],
                         ),
@@ -885,7 +885,7 @@ class _Extra5State extends State<Extra5> {
                             const SizedBox(height: 10),
                             const Text(
                                 """Grafik di atas memiliki persamaan kecepatan
-                                \nx=1.25t^2
+                                \nx=1.25t²
                                 \nBerdasarkan persamaan posisi tersebut, berapakah posisi benda pada detik ke 4?"""),
                           ],
                         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:kinematika_gerak_lurus/helper/sharedpreferences.dart';
 import 'package:kinematika_gerak_lurus/page/soal5/explanation5.dart';
 import 'package:kinematika_gerak_lurus/page/soal5/extra5.dart';
 
@@ -292,6 +293,7 @@ class _Soal5State extends State<Soal5> {
 
   void tampilDialog(String pilihan) {
     if (pilihan == 'A') {
+      Prefs().saveInt("score5", 10);
       showDialog(
         context: context,
         barrierDismissible: false,
@@ -331,6 +333,7 @@ class _Soal5State extends State<Soal5> {
         ),
       );
     } else if (pilihan == 'B') {
+      Prefs().saveInt("score5", 20);
       showDialog(
         context: context,
         barrierDismissible: false,
@@ -360,6 +363,7 @@ class _Soal5State extends State<Soal5> {
         ),
       );
     } else if (pilihan == 'C') {
+      Prefs().saveInt("score5", 10);
       showDialog(
         context: context,
         barrierDismissible: false,
@@ -399,6 +403,7 @@ class _Soal5State extends State<Soal5> {
         ),
       );
     } else if (pilihan == 'D') {
+      Prefs().saveInt("score5", 10);
       showDialog(
         context: context,
         barrierDismissible: false,
@@ -431,6 +436,7 @@ class _Soal5State extends State<Soal5> {
         ),
       );
     } else if (pilihan == 'E') {
+      Prefs().saveInt("score5", 10);
       showDialog(
         context: context,
         barrierDismissible: false,
