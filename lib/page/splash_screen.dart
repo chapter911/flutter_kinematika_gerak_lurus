@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:kinematika_gerak_lurus/helper/sharedpreferences.dart';
 import 'package:kinematika_gerak_lurus/page/soal1/soal1.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -13,6 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
+    Prefs().clearData();
     Future.delayed(const Duration(seconds: 2)).then(
       (value) => Get.offAll(() => const Soal1()),
     );

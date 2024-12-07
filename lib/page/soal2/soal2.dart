@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_exit_app/flutter_exit_app.dart';
 import 'package:get/get.dart';
 import 'package:kinematika_gerak_lurus/helper/sharedpreferences.dart';
 import 'package:kinematika_gerak_lurus/page/soal2/explanation2.dart';
 import 'package:kinematika_gerak_lurus/page/soal2/extra2.dart';
-
-import '../footer/footer.dart';
 
 class Soal2 extends StatefulWidget {
   const Soal2({super.key});
@@ -14,6 +13,11 @@ class Soal2 extends StatefulWidget {
 }
 
 class _Soal2State extends State<Soal2> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -282,7 +286,70 @@ class _Soal2State extends State<Soal2> {
                     ],
                   ),
                 ),
-                Flexible(flex: 1, child: footer),
+                Flexible(
+                  flex: 1,
+                  child: Row(
+                    children: [
+                      Flexible(
+                        flex: 10,
+                        child: SizedBox(
+                          width: double.maxFinite,
+                          height: double.maxFinite,
+                          child: Card(
+                            elevation: 10,
+                            child: Center(
+                              child: Container(
+                                width: double.maxFinite,
+                                padding: const EdgeInsets.all(10),
+                                child: Text(
+                                  "SKOR ANDA : ${(Prefs.readInt("score1") ?? 0) + (Prefs.readInt('score2') ?? 0) + (Prefs.readInt('score3') ?? 0) + (Prefs.readInt('score4') ?? 0) + (Prefs.readInt('score5') ?? 0)}",
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Flexible(
+                        flex: 2,
+                        child: SizedBox(
+                          width: double.maxFinite,
+                          height: double.maxFinite,
+                          child: ElevatedButton(
+                            onPressed: () {
+                              showDialog(
+                                context: (Get.context as BuildContext),
+                                builder: (context) => AlertDialog(
+                                  title: const Text('Keluar'),
+                                  content: const Text('Apakah Anda yakin?'),
+                                  actions: [
+                                    TextButton(
+                                        onPressed: () {
+                                          Get.back();
+                                        },
+                                        child: const Text('Tidak')),
+                                    TextButton(
+                                        onPressed: () {
+                                          FlutterExitApp.exitApp();
+                                        },
+                                        child: const Text('Ya')),
+                                  ],
+                                ),
+                              );
+                            },
+                            child: const Icon(
+                              Icons.exit_to_app,
+                              color: Colors.red,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
