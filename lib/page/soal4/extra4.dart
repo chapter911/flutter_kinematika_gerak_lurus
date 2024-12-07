@@ -11,7 +11,7 @@ class Extra4 extends StatefulWidget {
 
 class _Extra4State extends State<Extra4> {
   Widget soal = Container();
-  String judul = "Soal 2 Scafolding 1a";
+  String judul = "Soal 4 Scafolding 1a";
 
   @override
   void initState() {
@@ -1046,7 +1046,7 @@ class _Extra4State extends State<Extra4> {
       Get.offAll(() => const Soal2());
     }
     setState(() {
-      judul = "Soal 2 - Scafolding $s";
+      judul = "Soal 4 - Scafolding $s";
       soal;
     });
     return soal;
