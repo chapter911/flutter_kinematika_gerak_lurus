@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kinematika_gerak_lurus/page/soal2/soal2.dart';
+import 'package:kinematika_gerak_lurus/page/soal5/soal5.dart';
 
 class Extra5 extends StatefulWidget {
   const Extra5({super.key});
@@ -72,27 +72,21 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2m.jpg'),
+                            Image.asset('assets/soal5a.jpg'),
                             const SizedBox(height: 10),
-                            const Text("Bagaimana gerakan benda tersebut?"),
+                            const Text(
+                                "Berdasarkan grafik di atas, bagaimana persamaan grafiknya?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption(
-                        "A",
-                        "Bergerak ke depan dengan kecepatan konstan",
-                        true,
-                        "2a"),
-                    pilihanOption("B", "Diam", false, "1b"),
-                    pilihanOption(
-                        "C",
-                        "Bergerak ke belakang dengan kecepatan konstan",
-                        false,
-                        "1b"),
+                    pilihanOption("A", "v=0.75t^2+4t", false, "2a"),
+                    pilihanOption("B", "v=1.25t^2", false, "1b"),
+                    pilihanOption("C", "v=1.5t+4", false, "1b"),
+                    pilihanOption("D", "v=2.5t", false, "1b"),
                   ],
                 ),
               ),
@@ -116,32 +110,22 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2m.jpg'),
+                            Image.asset('assets/soal5a.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Berdasarkan grafik di atas, bagaimana garis singgungnya?"),
+                                """Berdasarkan grafik di atas, perpindahan benda merupakan luas permukaan di bawah grafik.
+                                \nBagaimana bentuk luas permukaan di bawah grafik?"""),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption(
-                        "A",
-                        "Garis singgung berupa garis lurus dengan kemiringan 0. ",
-                        false,
-                        "1c"),
-                    pilihanOption(
-                        "B",
-                        "Garis singgung berupa garis lurus dengan kemiringan tertentu ke arah atas",
-                        true,
-                        "2b"),
-                    pilihanOption(
-                        "C",
-                        "Garis singgung berupa garis lurus dengan kemiringan tertentu ke arah bawah",
-                        true,
-                        "1c"),
+                    pilihanOption("A", "Persegi", false, "1c"),
+                    pilihanOption("B", "Persegi panjang", false, "2b"),
+                    pilihanOption("C", "Trapesium", true, "1c"),
+                    pilihanOption("D", "Segitiga", false, "1c"),
                   ],
                 ),
               ),
@@ -165,24 +149,24 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2m.jpg'),
+                            Image.asset('assets/soal5a.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Grafik di atas dapat diubah dalam bentuk tabel seperti di bawah ini:"),
+                                "Grafik hubungan kecepatan terhadap waktu di atas dapat diubah dalam bentuk tabel seperti di bawah ini:"),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2n.jpg'),
+                            Image.asset('assets/soal5o.jpg'),
                             const Text(
-                                "Bagaimanakah posisi benda setiap detiknya?"),
+                                "Berdasarkan table di atas, berapakah selisih perubahan kecepatan benda setiap detiknya?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "Tetap", false, "1c"),
-                    pilihanOption("B", "Berubah semakin besar", true, "2c"),
-                    pilihanOption("C", "Berubah semakin kecil", false, "1c"),
+                    pilihanOption("A", "0.75 m/s", false, "1c"),
+                    pilihanOption("B", "1.5 m/s", true, "2c"),
+                    pilihanOption("C", "3 m/s", false, "1c"),
                   ],
                 ),
               ),
@@ -206,22 +190,23 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Di bawah ini adalah grafik posisi terhadap waktu untuk benda yang bergerak ke depan dengan kecepatan konstan"),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2m.jpg'),
+                            Image.asset('assets/soal5a.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Bagaimana grafik kecepatan terhadap waktu dari gerak benda di atas?"),
+                                """Grafik di atas memiliki persamaan posisi
+                                \nv=1.5t+4
+                                \nBerdasarkan persamaan kecepatan tersebut, berapakah persamaan posisinya?"""),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanGambar("A", "assets/soal2o.jpg", true, "3a"),
-                    pilihanGambar("B", "assets/soal2p.jpg", false, "2a"),
-                    pilihanGambar("C", "assets/soal2q.jpg", false, "2a"),
-                    pilihanGambar("D", "assets/soal2r.jpg", false, "2a"),
-                    pilihanGambar("E", "assets/soal2s.jpg", false, "2a"),
+                    pilihanOption("A", "x=0.75t^2+4t", true, "3a"),
+                    pilihanOption("B", "x=1.25t^2", false, "2a"),
+                    pilihanOption("C", "x=1.5t+4", false, "2a"),
+                    pilihanOption("D", "x=2.5t", false, "2a"),
                   ],
                 ),
               ),
@@ -245,22 +230,20 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan potongan grafik kecepatan terhadap waktu berikut ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/s1b.jpg'),
+                            Image.asset('assets/soal5b.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Berapakah gradien garis singgung grafik di atas?"),
+                                "Berdasarkan grafik di atas, berapakah luas area yang diarsir?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3", true, "2ba"),
-                    pilihanOption("B", "1.5", false, "2b"),
-                    pilihanOption("C", "0", false, "2b"),
-                    pilihanOption("D", "-1.5", false, "2b"),
-                    pilihanOption("E", "-3", false, "2b"),
+                    pilihanOption("A", "20 satuan luas", true, "3b"),
+                    pilihanOption("B", "28 satuan luas", true, "2b"),
+                    pilihanOption("C", "40 satuan luas", false, "2b"),
                   ],
                 ),
               ),
@@ -284,100 +267,21 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan tabel posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2n.jpg'),
+                            Image.asset('assets/soal5a.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Tabel di atas menunjukan perubahan posisi benda semakin besar setiap detiknya. Berdasarkan table di atas, berapakah perubahan posisi benda setiap detiknya?"),
+                                """Berdasarkan grafik di atas, perubahan kecepatan benda setiap detiknya sebesar 1.5 m/s.
+                                \nBerapakah besar perpindahan benda selama 4 detik?"""),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3 ke arah depan", false, "2c"),
-                    pilihanOption("B", "3 ke arah belakang", false, "2c"),
-                    pilihanOption("C", "1.5 ke arah depan", true, "2ca"),
-                    pilihanOption("D", "1.5 ke arah belakang", false, "2c"),
-                    pilihanOption("E", "0", false, "2c"),
-                  ],
-                ),
-              ),
-            )
-          ],
-        ),
-      );
-    } else if (s == "2ba") {
-      soal = Container(
-        padding: const EdgeInsets.all(10),
-        child: Column(
-          children: [
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Card(
-                      child: Container(
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                                "Di bawah ini adalah grafik posisi terhadap waktu  dengan gradien garis sebesar 1.5."),
-                            const SizedBox(height: 10),
-                            Image.asset('assets/soal2m.jpg'),
-                            const SizedBox(height: 10),
-                            const Text(
-                                "Berapakah kecepatan benda selama 2 detik?"),
-                          ],
-                        ),
-                      ),
-                    ),
-                    textPilihan(),
-                    pilihanOption("A", "3 m/s", false, "2ba"),
-                    pilihanOption("B", "1.5 m/s", true, "3c"),
-                    pilihanOption("C", "0 m/s", false, "2ba"),
-                    pilihanOption("D", "-1.5 m/s", false, "2ba"),
-                    pilihanOption("E", "-3 m/s", false, "2ba"),
-                  ],
-                ),
-              ),
-            )
-          ],
-        ),
-      );
-    } else if (s == "2ca") {
-      soal = Container(
-        padding: const EdgeInsets.all(10),
-        child: Column(
-          children: [
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Card(
-                      child: Container(
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                                "Perhatikan tabel posisi terhadap waktu di bawah ini:"),
-                            const SizedBox(height: 10),
-                            Image.asset('assets/soal2n.jpg'),
-                            const SizedBox(height: 10),
-                            const Text(
-                                "Tabel di atas menunjukan perubahan posisi benda setiap detiknya sebesar 1.5 ke arah depan.\nBerapakah kecepatan benda selama 2 detik?"),
-                          ],
-                        ),
-                      ),
-                    ),
-                    textPilihan(),
-                    pilihanOption("A", "3 m/s", false, "2ca"),
-                    pilihanOption("B", "1.5 m/s", true, "3a"),
-                    pilihanOption("C", "0 m/s", false, "2ca"),
-                    pilihanOption("D", "-1.5 m/s", false, "2ca"),
-                    pilihanOption("E", "-3 m/s", false, "2ca"),
+                    pilihanOption("A", "20m", false, "2c"),
+                    pilihanOption("B", "28m", true, "3c"),
+                    pilihanOption("C", "40m", false, "2c"),
                   ],
                 ),
               ),
@@ -401,27 +305,22 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2t.jpg'),
+                            Image.asset('assets/soal5a.jpg'),
                             const SizedBox(height: 10),
-                            const Text("Bagaimana keadaan benda tersebut?"),
+                            const Text(
+                                """Grafik di atas memiliki persamaan kecepatan
+                            \nx=0.75t^2+4t
+                            \nBerdasarkan persamaan posisi tersebut, berapakah posisi benda pada detik ke 0?"""),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption(
-                        "A",
-                        "Bergerak ke depan dengan kecepatan konstan",
-                        false,
-                        "3b"),
-                    pilihanOption("B", "Diam", true, "4a"),
-                    pilihanOption(
-                        "C",
-                        "Bergerak ke belakang dengan kecepatan konstan",
-                        false,
-                        "3b"),
+                    pilihanOption("A", "0m", true, "3aa"),
+                    pilihanOption("B", "20m", false, "3a"),
+                    pilihanOption("C", "28m", false, "3a"),
                   ],
                 ),
               ),
@@ -445,32 +344,21 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan potongan grafik kecepatan terhadap waktu berikut ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2t.jpg'),
+                            Image.asset('assets/soal5b.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Berdasarkan grafik di atas, bagaimana garis singgungnya?"),
+                                """Berdasarkan grafik di atas, luas permukaan di bawah grafik sebesar 28 satuan luas.
+                                \nBerapakah perpindahan benda selama 4 detik?"""),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption(
-                        "A",
-                        "Garis singgung berupa garis lurus dengan kemiringan 0.",
-                        true,
-                        "4b"),
-                    pilihanOption(
-                        "B",
-                        "Garis singgung berupa garis lurus dengan kemiringan tertentu ke arah atas.",
-                        false,
-                        "3c"),
-                    pilihanOption(
-                        "C",
-                        "Garis singgung berupa garis lurus dengan kemiringan tertentu ke arah bawah.",
-                        false,
-                        "3c"),
+                    pilihanOption("A", "20m", false, "3b"),
+                    pilihanOption("B", "28m", true, "3ba"),
+                    pilihanOption("C", "40m", false, "3b"),
                   ],
                 ),
               ),
@@ -494,23 +382,133 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2t.jpg'),
+                            Image.asset('assets/soal5a.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Grafik di atas dapat diubah dalam bentuk tabel seperti di bawah ini:"),
-                            Image.asset('assets/soal2u.jpg'),
-                            const Text(
-                                "Bagaimanakah posisi benda setiap detiknya?"),
+                                "Selama 4 detik, benda berpindah sejauh 28 m. Berapakah kecepatan rata-rata benda selama 4 detik?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "Tetap", false, "4c"),
-                    pilihanOption("B", "Berubah Semakin Besar.", false, "3c"),
-                    pilihanOption("C", "Berubah semakin kecil", true, "3c"),
+                    pilihanOption("A", "0 m/s", false, "3c"),
+                    pilihanOption("B", "4 m/s", false, "3c"),
+                    pilihanOption("C", "7 m/s", true, "4c"),
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
+      );
+    } else if (s == "3aa") {
+      soal = Container(
+        padding: const EdgeInsets.all(10),
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Card(
+                      child: Container(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
+                            const SizedBox(height: 10),
+                            Image.asset('assets/soal5a.jpg'),
+                            const SizedBox(height: 10),
+                            const Text(
+                                """Grafik di atas memiliki persamaan kecepatan
+                                \nx=0.75t^2+4t
+                                \nBerdasarkan persamaan posisi tersebut, berapakah posisi benda pada detik ke 4?"""),
+                          ],
+                        ),
+                      ),
+                    ),
+                    textPilihan(),
+                    pilihanOption("A", "0m", false, "3aa"),
+                    pilihanOption("B", "20m", true, "3ab"),
+                    pilihanOption("C", "28m", false, "3aa"),
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
+      );
+    } else if (s == "3ba") {
+      soal = Container(
+        padding: const EdgeInsets.all(10),
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Card(
+                      child: Container(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
+                            const SizedBox(height: 10),
+                            Image.asset('assets/soal5a.jpg'),
+                            const SizedBox(height: 10),
+                            const Text(
+                                "Selama 4 detik, benda berpindah sejauh 28 m. Berapakah kecepatan rata-rata benda selama 4 detik?"),
+                          ],
+                        ),
+                      ),
+                    ),
+                    textPilihan(),
+                    pilihanOption("A", "0m", false, "3ba"),
+                    pilihanOption("B", "4m", true, "3ba"),
+                    pilihanOption("C", "7m", true, "4a"),
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
+      );
+    } else if (s == "3ab") {
+      soal = Container(
+        padding: const EdgeInsets.all(10),
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Card(
+                      child: Container(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
+                            const SizedBox(height: 10),
+                            Image.asset('assets/soal5a.jpg'),
+                            const SizedBox(height: 10),
+                            const Text(
+                                "Pada detik ke 0, posisi benda berada di 0 m, sedangkan pada detik ke 4, posisi benda berada di 28 m. Berdasarkan data tersebut, berapakah kecepatan rata-rata benda selama 4 detik?"),
+                          ],
+                        ),
+                      ),
+                    ),
+                    textPilihan(),
+                    pilihanOption("A", "0m/s", false, "3ab"),
+                    pilihanOption("B", "5m/s", true, "3ab"),
+                    pilihanOption("C", "7m/s", true, "4a"),
                   ],
                 ),
               ),
@@ -534,22 +532,21 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Di bawah ini adalah grafik posisi terhadap waktu untuk benda yang diam"),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2t.jpg'),
+                            Image.asset('assets/soal5c.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Bagaimana grafik kecepatan terhadap waktu dari gerak benda di atas?"),
+                                "Berdasarkan grafik di atas, bagaimana persamaan grafiknya?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanGambar("A", "assets/soal2o.jpg", false, "4a"),
-                    pilihanGambar("B", "assets/soal2p.jpg", false, "4a"),
-                    pilihanGambar("C", "assets/soal2q.jpg", true, "5a"),
-                    pilihanGambar("D", "assets/soal2r.jpg", false, "4a"),
-                    pilihanGambar("E", "assets/soal2s.jpg", false, "4a"),
+                    pilihanOption("A", "v=0.75t^2+4t", false, "4b"),
+                    pilihanOption("B", "v=1.25t^2", false, "4b"),
+                    pilihanOption("C", "v=1.5t+4", false, "4b"),
+                    pilihanOption("D", "v=2.5t", true, "5a"),
                   ],
                 ),
               ),
@@ -573,22 +570,22 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2t.jpg'),
+                            Image.asset('assets/soal5c.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Berapakah gradien garis singgung gradik di atas?"),
+                                """Berdasarkan grafik di atas, perpindahan benda merupakan luas permukaan di bawah grafik.
+                                \nBagaimana bentuk luas permukaan di bawah grafik?"""),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3", false, "4b"),
-                    pilihanOption("B", "1.5", false, "4b"),
-                    pilihanOption("C", "0", true, "4ba"),
-                    pilihanOption("D", "-1.5", false, "4b"),
-                    pilihanOption("E", "-3", false, "4b"),
+                    pilihanOption("A", "Persegi", false, "4c"),
+                    pilihanOption("B", "Persegi panjang", false, "4c"),
+                    pilihanOption("C", "Trapesium", true, "4c"),
+                    pilihanOption("D", "Segitiga", true, "5b"),
                   ],
                 ),
               ),
@@ -612,100 +609,25 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan tabel posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2u.jpg'),
+                            Image.asset('assets/soal5c.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Tabel di atas menunjukan perubahan posisi benda yang tetap setiap detiknya. Berdasarkan table di atas, berapakah perubahan posisi benda setiap detiknya?"),
+                                "Grafik hubungan kecepatan terhadap waktu di atas dapat diubah dalam bentuk tabel seperti di bawah ini:"),
+                            const SizedBox(height: 10),
+                            Image.asset('assets/soal5p.jpg'),
+                            const SizedBox(height: 10),
+                            const Text(
+                                "Berdasarkan table di atas, berapakah selisih perubahan kecepatan benda setiap detiknya?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3 ke arah depan", false, "4c"),
-                    pilihanOption("B", "3 ke arah belakang", false, "4c"),
-                    pilihanOption("C", "1.5 ke arah depan", false, "4c"),
-                    pilihanOption("D", "1.5 ke arah belakang", false, "4c"),
-                    pilihanOption("E", "0", true, "4ca"),
-                  ],
-                ),
-              ),
-            )
-          ],
-        ),
-      );
-    } else if (s == "4ba") {
-      soal = Container(
-        padding: const EdgeInsets.all(10),
-        child: Column(
-          children: [
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Card(
-                      child: Container(
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                                "Di bawah ini adalah grafik posisi terhadap waktu  dengan gradien garis sebesar 0."),
-                            const SizedBox(height: 10),
-                            Image.asset('assets/soal2t.jpg'),
-                            const SizedBox(height: 10),
-                            const Text(
-                                "Berapakah kecepatan benda selama 2 detik?"),
-                          ],
-                        ),
-                      ),
-                    ),
-                    textPilihan(),
-                    pilihanOption("A", "3 m/s", false, "4ba"),
-                    pilihanOption("B", "1.5 m/s", false, "4ba"),
-                    pilihanOption("C", "0 m/s", true, "5a"),
-                    pilihanOption("D", "-1.5 m/s", false, "4ba"),
-                    pilihanOption("E", "-3 m/s", false, "4ba"),
-                  ],
-                ),
-              ),
-            )
-          ],
-        ),
-      );
-    } else if (s == "4ca") {
-      soal = Container(
-        padding: const EdgeInsets.all(10),
-        child: Column(
-          children: [
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Card(
-                      child: Container(
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                                "Di bawah ini adalah grafik posisi terhadap waktu  dengan gradien garis sebesar 0."),
-                            const SizedBox(height: 10),
-                            Image.asset('assets/soal2u.jpg'),
-                            const SizedBox(height: 10),
-                            const Text(
-                                "Tabel di atas menunjukan posisi benda yang tidak  berubah di setiap detiknya Berapakah kecepatan benda selama 2 detik?"),
-                          ],
-                        ),
-                      ),
-                    ),
-                    textPilihan(),
-                    pilihanOption("A", "3 m/s", false, "4ba"),
-                    pilihanOption("B", "1.5 m/s", false, "4ba"),
-                    pilihanOption("C", "0 m/s", true, "5a"),
-                    pilihanOption("D", "-1.5 m/s", false, "4ba"),
-                    pilihanOption("E", "-3 m/s", false, "4ba"),
+                    pilihanOption("A", "0.75 m/s", false, "4c"),
+                    pilihanOption("B", "1.25 m/s", false, "4c"),
+                    pilihanOption("C", "2.5 m/s", true, "5c"),
                   ],
                 ),
               ),
@@ -729,27 +651,23 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2v.jpg'),
+                            Image.asset('assets/soal5c.jpg'),
                             const SizedBox(height: 10),
-                            const Text("Bagaimana gerakan benda tersebut?"),
+                            const Text(
+                                """Grafik di atas memiliki persamaan posisi
+                                \nv=2.5t
+                                \nBerdasarkan persamaan kecepatan tersebut, berapakah persamaan posisinya?"""),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption(
-                        "A",
-                        "Bergerak ke depan dengan kecepatan konstan",
-                        false,
-                        "5b"),
-                    pilihanOption("B", "Diam", false, "5b"),
-                    pilihanOption(
-                        "C",
-                        "Bergerak ke belakang dengan kecepatan konstan",
-                        true,
-                        "6a"),
+                    pilihanOption("A", "x=0.75t^2+4t", false, "5a"),
+                    pilihanOption("B", "x=1.25t^2", true, "6a"),
+                    pilihanOption("C", "x=1.5t+4", false, "5a"),
+                    pilihanOption("D", "x=2.5t", false, "5a"),
                   ],
                 ),
               ),
@@ -773,32 +691,20 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2v.jpg'),
+                            Image.asset('assets/soal5d.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Berdasarkan grafik di atas, bagaimana garis singgungnya?"),
+                                "Berdasarkan grafik di atas, berapakah luas area yang diarsir?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption(
-                        "A",
-                        "Garis singgung berupa garis lurus dengan kemiringan 0.",
-                        false,
-                        "5c"),
-                    pilihanOption(
-                        "B",
-                        "Garis singgung berupa garis lurus dengan kemiringan tertentu ke arah atas.",
-                        false,
-                        "5c"),
-                    pilihanOption(
-                        "C",
-                        "Garis singgung berupa garis lurus dengan kemiringan tertentu ke arah bawah.",
-                        true,
-                        "6b"),
+                    pilihanOption("A", "20 satuan luas", true, "6b"),
+                    pilihanOption("B", "28 satuan luas", false, "5b"),
+                    pilihanOption("C", "40 satuan luas", false, "5b"),
                   ],
                 ),
               ),
@@ -822,24 +728,21 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2v.jpg'),
+                            Image.asset('assets/soal5c.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Grafik di atas dapat diubah dalam bentuk tabel seperti di bawah ini:"),
-                            const SizedBox(height: 10),
-                            Image.asset('assets/soal2.jpg'),
-                            const Text(
-                                "Bagaimanakah posisi benda setiap detiknya?"),
+                                """Berdasarkan grafik di atas, perubahan kecepatan benda setiap detiknya sebesar 2.5 m/s.
+                                \nBerapakah besar perpindahan benda selama 4 detik?"""),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "Tetap", false, "5c"),
-                    pilihanOption("B", "Berubah semakin besar", false, "5c"),
-                    pilihanOption("C", "Berubah semakin kecil", true, "6c"),
+                    pilihanOption("A", "20 m", true, "6c"),
+                    pilihanOption("B", "28 m", false, "5c"),
+                    pilihanOption("C", "40 m", false, "5c"),
                   ],
                 ),
               ),
@@ -863,22 +766,22 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Di bawah ini adalah grafik posisi terhadap waktu untuk benda yang bergerak ke belakang dengan kecepatan konstan"),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2v.jpg'),
+                            Image.asset('assets/soal5c.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Bagaimana grafik kecepatan terhadap waktu dari gerak benda di atas?"),
+                                """Grafik di atas memiliki persamaan kecepatan
+                                \nx=1.25t^2
+                                \nBerdasarkan persamaan posisi tersebut, berapakah posisi benda pada detik ke 0?"""),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanGambar("A", "assets/soal2o.jpg", false, "6a"),
-                    pilihanGambar("B", "assets/soal2p.jpg", false, "6a"),
-                    pilihanGambar("C", "assets/soal2q.jpg", true, "6a"),
-                    pilihanGambar("D", "assets/soal2r.jpg", true, "done"),
-                    pilihanGambar("E", "assets/soal2s.jpg", false, "6a"),
+                    pilihanOption("A", "0 m", true, "6aa"),
+                    pilihanOption("B", "20 m", false, "6a"),
+                    pilihanOption("C", "28 m", false, "6a"),
                   ],
                 ),
               ),
@@ -902,22 +805,20 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2v.jpg'),
+                            Image.asset('assets/soal5d.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Berapakah gradien garis singgung gradik di atas?"),
+                                "Berdasarkan grafik di atas, luas permukaan di bawah grafik sebesar 20 satuan luas. Berapakah perpindahan benda selama 4 detik?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3 m/s", false, "6b"),
-                    pilihanOption("B", "1.5 m/s", false, "6b"),
-                    pilihanOption("C", "0 m/s", false, "6b"),
-                    pilihanOption("D", "-1.5 m/s", false, "6b"),
-                    pilihanOption("E", "-3 m/s", true, "6ba"),
+                    pilihanOption("A", "20 m", true, "6ba"),
+                    pilihanOption("B", "28 m", false, "6b"),
+                    pilihanOption("C", "40 m", false, "6b"),
                   ],
                 ),
               ),
@@ -941,22 +842,59 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan tabel posisi terhadap waktu di bawah ini."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2w.jpg'),
+                            Image.asset('assets/soal5c.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Tabel di atas menunjukan perubahan posisi benda semakin kecil setiap detiknya. Berdasarkan table di atas, berapakah perubahan posisi benda setiap detiknya?"),
+                                "Selama 4 detik, benda berpindah sejauh 20 m. Berapakah kecepatan rata-rata benda selama 4 detik?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3 ke arah depan", false, "6c"),
-                    pilihanOption("B", "3 ke arah belakang", true, "6ca"),
-                    pilihanOption("C", "1.5 ke arah depan", false, "6c"),
-                    pilihanOption("D", "1.5 ke arah belakang", false, "6c"),
-                    pilihanOption("E", "0", false, "6c"),
+                    pilihanOption("A", "0 m/s", false, "6c"),
+                    pilihanOption("B", "5 m/s", true, "done"),
+                    pilihanOption("C", "7 m/s", false, "6c"),
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
+      );
+    } else if (s == "6aa") {
+      soal = Container(
+        padding: const EdgeInsets.all(10),
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Card(
+                      child: Container(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
+                            const SizedBox(height: 10),
+                            Image.asset('assets/soal5c.jpg'),
+                            const SizedBox(height: 10),
+                            const Text(
+                                """Grafik di atas memiliki persamaan kecepatan
+                                \nx=1.25t^2
+                                \nBerdasarkan persamaan posisi tersebut, berapakah posisi benda pada detik ke 4?"""),
+                          ],
+                        ),
+                      ),
+                    ),
+                    textPilihan(),
+                    pilihanOption("A", "0 m", false, "6aa"),
+                    pilihanOption("B", "20 m", true, "6ab"),
+                    pilihanOption("C", "28 m", false, "6aa"),
                   ],
                 ),
               ),
@@ -980,22 +918,20 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Di bawah ini adalah grafik posisi terhadap waktu  dengan gradien garis sebesar -3."),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2v.jpg'),
+                            Image.asset('assets/soal5c.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Tabel di atas menunjukan perubahan posisi benda semakin kecil setiap detiknya. Berdasarkan table di atas, berapakah perubahan posisi benda setiap detiknya?"),
+                                "Selama 4 detik, benda berpindah sejauh 20 m. Berapakah kecepatan rata-rata benda selama 4 detik?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3 m/s", false, "6ba"),
-                    pilihanOption("B", "1.5 m/s", false, "6ba"),
-                    pilihanOption("C", "0 m/s", false, "6ba"),
-                    pilihanOption("D", "-1.5 m/s", false, "6ba"),
-                    pilihanOption("E", "-3 m/s", true, "done"),
+                    pilihanOption("A", "0 m/s", false, "6ba"),
+                    pilihanOption("B", "5 m/s", true, "done"),
+                    pilihanOption("C", "7 m/s", false, "6ba"),
                   ],
                 ),
               ),
@@ -1003,7 +939,7 @@ class _Extra5State extends State<Extra5> {
           ],
         ),
       );
-    } else if (s == "6ca") {
+    } else if (s == "6ab") {
       soal = Container(
         padding: const EdgeInsets.all(10),
         child: Column(
@@ -1019,22 +955,20 @@ class _Extra5State extends State<Extra5> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                                "Perhatikan tabel posisi terhadap waktu di bawah ini:"),
+                                "Perhatikan grafik kecepatan terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2w.jpg'),
+                            Image.asset('assets/soal5c.jpg'),
                             const SizedBox(height: 10),
                             const Text(
-                                "Tabel di atas menunjukan perubahan posisi benda setiap detiknya sebesar 3 ke arah belakang. Berapakah kecepatan benda selama 2 detik?"),
+                                "Selama 4 detik, benda berpindah sejauh 20 m. Berapakah kecepatan rata-rata benda selama 4 detik?"),
                           ],
                         ),
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3 m/s", false, "6ca"),
-                    pilihanOption("B", "1.5 m/s", false, "6ca"),
-                    pilihanOption("C", "0 m/s", false, "6ca"),
-                    pilihanOption("D", "-1.5 m/s", false, "6ca"),
-                    pilihanOption("E", "-3 m/s", true, "done"),
+                    pilihanOption("A", "0 m/s", false, "6ab"),
+                    pilihanOption("B", "5 m/s", true, "done"),
+                    pilihanOption("C", "7 m/s", false, "6ab"),
                   ],
                 ),
               ),
@@ -1043,7 +977,7 @@ class _Extra5State extends State<Extra5> {
         ),
       );
     } else {
-      Get.offAll(() => const Soal2());
+      Get.offAll(() => const Soal5());
     }
     setState(() {
       judul = "Soal 5 - Scafolding $s";
