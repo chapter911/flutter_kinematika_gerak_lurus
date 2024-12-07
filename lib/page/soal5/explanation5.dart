@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:kinematika_gerak_lurus/page/soal5/soal5.dart';
+import 'package:kinematika_gerak_lurus/page/score.dart';
 
 class Explanation5 extends StatefulWidget {
   const Explanation5({super.key});
@@ -152,7 +152,7 @@ class _Explanation5State extends State<Explanation5> {
         next: const Text('Next', style: TextStyle(fontWeight: FontWeight.w600)),
         back: const Text('Back', style: TextStyle(fontWeight: FontWeight.w600)),
         onDone: () {
-          Get.offAll(() => const Soal5());
+          Get.offAll(() => const Score());
         },
       ),
     );
