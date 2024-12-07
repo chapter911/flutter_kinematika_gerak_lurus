@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:kinematika_gerak_lurus/page/soal2/soal2.dart';
+import 'package:kinematika_gerak_lurus/page/soal4/soal4.dart';
 
 class Extra4 extends StatefulWidget {
   const Extra4({super.key});
@@ -594,7 +594,7 @@ class _Extra4State extends State<Extra4> {
         ),
       );
     } else {
-      Get.offAll(() => const Soal2());
+      Get.offAll(() => const Soal4());
     }
     setState(() {
       judul = "Soal 4 - Scafolding $s";
