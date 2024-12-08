@@ -33,7 +33,7 @@ class _Soal1State extends State<Soal1> {
             child: Column(
               children: [
                 Flexible(
-                  flex: 15,
+                  flex: 11,
                   child: Column(
                     children: [
                       const SizedBox(
@@ -263,9 +263,9 @@ class _Soal1State extends State<Soal1> {
                               child: Container(
                                 width: double.maxFinite,
                                 padding: const EdgeInsets.all(10),
-                                child: Text(
-                                  "SKOR ANDA : ${(Prefs.readInt("score1") ?? 0) + (Prefs.readInt('score2') ?? 0) + (Prefs.readInt('score3') ?? 0) + (Prefs.readInt('score4') ?? 0) + (Prefs.readInt('score5') ?? 0)}",
-                                  style: const TextStyle(
+                                child: const Text(
+                                  "SKOR ANDA : 0",
+                                  style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20,
                                   ),
@@ -436,7 +436,9 @@ class _Soal1State extends State<Soal1> {
         ),
       );
     } else if (pilihan == 'D') {
-      Prefs().saveInt("score1", 20);
+      if (Prefs.checkData("score1") == false) {
+        Prefs().saveInt("score1", 20);
+      }
       showDialog(
         context: context,
         barrierDismissible: false,

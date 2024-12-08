@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kinematika_gerak_lurus/page/soal1/soal1.dart';
+import 'package:kinematika_gerak_lurus/page/splash_screen.dart';
 
 class Extra1 extends StatefulWidget {
   const Extra1({super.key});
@@ -29,9 +30,29 @@ class _Extra1State extends State<Extra1> {
         actions: [
           IconButton(
             onPressed: () {
-              setState(() {
-                getSoal("1a");
-              });
+              showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  title: const Text("Ulangi Pengerjaan?"),
+                  content: const Text(
+                    "Apakah anda ingin mengulang mengerjakan soal?",
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      child: const Text("Tidak"),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Get.offAll(() => const SplashScreen());
+                      },
+                      child: const Text("Ya"),
+                    ),
+                  ],
+                ),
+              );
             },
             icon: const Icon(Icons.refresh),
           ),
@@ -159,7 +180,7 @@ class _Extra1State extends State<Extra1> {
                             const Text(
                                 "Grafik di atas dapat diubah dalam bentuk tabel seperti di bawah ini:"),
                             const SizedBox(height: 10),
-                            Image.asset('assets/s1f.jpg'),
+                            Image.asset('assets/s1f.png'),
                             const Text(
                                 "Berdasarkan tabel di atas, bagaimana posisi benda selama interval 4 detik?"),
                           ],
@@ -265,7 +286,7 @@ class _Extra1State extends State<Extra1> {
                           children: [
                             const Text("Perhatikan tabel di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/s1f.jpg'),
+                            Image.asset('assets/s1f.png'),
                             const SizedBox(height: 10),
                             const Text(
                                 "Berdasarkan tabel di atas, posisi benda selama 4 detik adalah tetap/ tidak berubah. Apa makna dari posisi benda yang tetap/ tidak berubah?"),
@@ -388,7 +409,7 @@ class _Extra1State extends State<Extra1> {
                             const SizedBox(height: 10),
                             const Text(
                                 "Grafik di atas dapat diubah dalam bentuk tabel seperti di bawah ini:"),
-                            Image.asset('assets/s1e.jpg'),
+                            Image.asset('assets/s1e.png'),
                             const SizedBox(height: 10),
                             const Text(
                                 "Berdasarkan tabel seperti di atas, bagaimana posisi benda selama interval 6 detik?")
@@ -499,7 +520,7 @@ class _Extra1State extends State<Extra1> {
                             const Text(
                                 "Perhatikan kembali tabel di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/s1e.jpg'),
+                            Image.asset('assets/s1e.png'),
                             const SizedBox(height: 10),
                             const Text(
                                 "Berdasarkan tabel di atas, posisi benda selama 6 detik adalah berubah. Apa makna dari posisi benda yang berubah?"),

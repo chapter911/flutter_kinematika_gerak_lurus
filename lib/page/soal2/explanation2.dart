@@ -146,7 +146,7 @@ class _Explanation2State extends State<Explanation2> {
                     """t = 2 sampai t = 4""",
                     textAlign: TextAlign.justify,
                   ),
-                  Center(child: Image.asset('assets/soal2l.jpg')),
+                  Center(child: Image.asset('assets/soal2l.png')),
                   const Text(
                       """Berdasarkan nilai kecepatan dari detik ke 0 sampai detik ke 5, maka grafik kecepatan terhadap waktu dapat digambarkan sebagai berikut:"""),
                   Center(child: Image.asset('assets/soal2d.jpg')),

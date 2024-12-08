@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kinematika_gerak_lurus/page/soal4/soal4.dart';
+import 'package:kinematika_gerak_lurus/page/splash_screen.dart';
 
 class Extra4 extends StatefulWidget {
   const Extra4({super.key});
@@ -29,9 +30,29 @@ class _Extra4State extends State<Extra4> {
         actions: [
           IconButton(
             onPressed: () {
-              setState(() {
-                getSoal("1a");
-              });
+              showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  title: const Text("Ulangi Pengerjaan?"),
+                  content: const Text(
+                    "Apakah anda ingin mengulang mengerjakan soal?",
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      child: const Text("Tidak"),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Get.offAll(() => const SplashScreen());
+                      },
+                      child: const Text("Ya"),
+                    ),
+                  ],
+                ),
+              );
             },
             icon: const Icon(Icons.refresh),
           ),

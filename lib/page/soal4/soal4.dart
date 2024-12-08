@@ -33,7 +33,7 @@ class _Soal4State extends State<Soal4> {
             child: Column(
               children: [
                 Flexible(
-                  flex: 15,
+                  flex: 11,
                   child: Column(
                     children: [
                       const SizedBox(
@@ -297,7 +297,7 @@ class _Soal4State extends State<Soal4> {
                                 width: double.maxFinite,
                                 padding: const EdgeInsets.all(10),
                                 child: Text(
-                                  "SKOR ANDA : ${(Prefs.readInt("score1") ?? 0) + (Prefs.readInt('score2') ?? 0) + (Prefs.readInt('score3') ?? 0) + (Prefs.readInt('score4') ?? 0) + (Prefs.readInt('score5') ?? 0)}",
+                                  "SKOR ANDA : ${(Prefs.readInt("score1") ?? 0) + (Prefs.readInt('score2') ?? 0) + (Prefs.readInt('score3') ?? 0)}",
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20,
@@ -395,7 +395,9 @@ class _Soal4State extends State<Soal4> {
         ),
       );
     } else if (pilihan == 'B') {
-      Prefs().saveInt("score4", 20);
+      if (Prefs.checkData("score4") == false) {
+        Prefs().saveInt("score4", 20);
+      }
       showDialog(
         context: context,
         barrierDismissible: false,

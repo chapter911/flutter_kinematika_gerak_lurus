@@ -53,7 +53,7 @@ class _Explanation1State extends State<Explanation1> {
                     """Grafik hubungan posisi terhadap waktu di atas dapat diubah dalam bentuk tabel seperti di bawah ini:""",
                     textAlign: TextAlign.justify,
                   ),
-                  Image.asset('assets/s1e.jpg'),
+                  Image.asset('assets/s1e.png'),
                   const Text(
                     """Berdasarkan table di atas, diperoleh informasi sebagai berikut:
                       \n•	Selama empat detik pertama (dari t = 0s sampai t = 4s), benda diam di x = 3m (3 meter di depan titik acuan x = 0)
@@ -116,26 +116,13 @@ class _Explanation1State extends State<Explanation1> {
                       "Perhatikan grafik posisi terhadap waktu di bawah ini."),
                   Image.asset('assets/soal1.jpg'),
                   const Text(
-                    """Grafik posisi terhadap waktu di atas memiliki 2 persamaan posisi.
-                    \nt = 0 sampai t = 4
-                    \nx (t) = 3
-                    \nt = 4 sampai t = 10
-                    \n(x-x_1)/(x_2-x_1 )=(t-t_1)/(t_2-t_1 )
-                    \n(x-3)/(0-3)=(t-4)/(10-4)
-                    \n(x-3)/(-3)=(t-4)/6
-                    \n6x-18=-3t+12
-                    \n6x=-3t+30
-                    \nx=-1/2 t+5
-                    \nDari kedua persamaan posisi di atas, dapat dicari kecepatan benda pada:
-                    \nt = 0 sampai t = 4
-                    \nv ⃗(t)=d/dt  x (t)
-                    \n=d/dt  (3)
-                    \n=0  m⁄s
-                    \nt > 4 sampai t = 10
-                    \nv ⃗(t)=d/dt  x (t)
-                    \n=d/dt  (-1/2 t+5)
-                    \n=-1/2   m⁄s
-                    \nBerdasarkan persamaan kecepatan, dapat dilihat bahwa dari detik ke 0 sampai detik ke 4, besar kecepatan benda adalah 0, yang artinya benda diam. Dari detik ke 4 sampai detik ke 10, benda memiliki kecepatan -0.5 m/s yang artinya benda bergerak mundur. Setelah detik ke 10, tidak didefinisikan posisi benda, artinya gerak benda berhenti pada detik ke 10.""",
+                      """Grafik posisi terhadap waktu di atas memiliki 2 persamaan posisi."""),
+                  Image.asset('assets/s1h.png'),
+                  const Text(
+                      """Dari kedua persamaan posisi di atas, dapat dicari kecepatan benda pada:"""),
+                  Image.asset('assets/s1i.png'),
+                  const Text(
+                    """Berdasarkan persamaan kecepatan, dapat dilihat bahwa dari detik ke 0 sampai detik ke 4, besar kecepatan benda adalah 0, yang artinya benda diam. Dari detik ke 4 sampai detik ke 10, benda memiliki kecepatan -0.5 m/s yang artinya benda bergerak mundur. Setelah detik ke 10, tidak didefinisikan posisi benda, artinya gerak benda berhenti pada detik ke 10.""",
                     textAlign: TextAlign.justify,
                   )
                 ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:kinematika_gerak_lurus/page/soal3/soal3.dart';
+import 'package:kinematika_gerak_lurus/page/soal4/soal4.dart';
 
 class Explanation3 extends StatefulWidget {
   const Explanation3({super.key});
@@ -154,7 +154,7 @@ class _Explanation3State extends State<Explanation3> {
         next: const Text('Next', style: TextStyle(fontWeight: FontWeight.w600)),
         back: const Text('Back', style: TextStyle(fontWeight: FontWeight.w600)),
         onDone: () {
-          Get.offAll(() => const Soal3());
+          Get.offAll(() => const Soal4());
         },
       ),
     );

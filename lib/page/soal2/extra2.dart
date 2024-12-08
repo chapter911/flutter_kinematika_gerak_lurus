@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kinematika_gerak_lurus/page/soal2/soal2.dart';
+import 'package:kinematika_gerak_lurus/page/splash_screen.dart';
 
 class Extra2 extends StatefulWidget {
   const Extra2({super.key});
@@ -29,9 +30,29 @@ class _Extra2State extends State<Extra2> {
         actions: [
           IconButton(
             onPressed: () {
-              setState(() {
-                getSoal("1a");
-              });
+              showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  title: const Text("Ulangi Pengerjaan?"),
+                  content: const Text(
+                    "Apakah anda ingin mengulang mengerjakan soal?",
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      child: const Text("Tidak"),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Get.offAll(() => const SplashScreen());
+                      },
+                      child: const Text("Ya"),
+                    ),
+                  ],
+                ),
+              );
             },
             icon: const Icon(Icons.refresh),
           ),
@@ -140,7 +161,7 @@ class _Extra2State extends State<Extra2> {
                     pilihanOption(
                         "C",
                         "Garis singgung berupa garis lurus dengan kemiringan tertentu ke arah bawah",
-                        true,
+                        false,
                         "1c"),
                   ],
                 ),
@@ -172,7 +193,7 @@ class _Extra2State extends State<Extra2> {
                             const Text(
                                 "Grafik di atas dapat diubah dalam bentuk tabel seperti di bawah ini:"),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2n.jpg'),
+                            Image.asset('assets/soal2n.png'),
                             const Text(
                                 "Bagaimanakah posisi benda setiap detiknya?"),
                           ],
@@ -217,11 +238,58 @@ class _Extra2State extends State<Extra2> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanGambar("A", "assets/soal2o.jpg", true, "3a"),
-                    pilihanGambar("B", "assets/soal2p.jpg", false, "2a"),
-                    pilihanGambar("C", "assets/soal2q.jpg", false, "2a"),
-                    pilihanGambar("D", "assets/soal2r.jpg", false, "2a"),
-                    pilihanGambar("E", "assets/soal2s.jpg", false, "2a"),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "A",
+                          "assets/soal2o.jpg",
+                          true,
+                          "3a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "B",
+                          "assets/soal2p.jpg",
+                          false,
+                          "2a",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "C",
+                          "assets/soal2q.jpg",
+                          false,
+                          "2a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "D",
+                          "assets/soal2r.jpg",
+                          false,
+                          "2a",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "E",
+                          "assets/soal2s.jpg",
+                          false,
+                          "2a",
+                        ),
+                      ),
+                      Flexible(flex: 1, child: Container()),
+                    ]),
                   ],
                 ),
               ),
@@ -247,7 +315,7 @@ class _Extra2State extends State<Extra2> {
                             const Text(
                                 "Perhatikan potongan grafik posisi terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/s1b.jpg'),
+                            Image.asset('assets/soal2m.jpg'),
                             const SizedBox(height: 10),
                             const Text(
                                 "Berapakah gradien garis singgung grafik di atas?"),
@@ -256,8 +324,8 @@ class _Extra2State extends State<Extra2> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3", true, "2ba"),
-                    pilihanOption("B", "1.5", false, "2b"),
+                    pilihanOption("A", "3", false, "2b"),
+                    pilihanOption("B", "1.5", true, "2ba"),
                     pilihanOption("C", "0", false, "2b"),
                     pilihanOption("D", "-1.5", false, "2b"),
                     pilihanOption("E", "-3", false, "2b"),
@@ -286,7 +354,7 @@ class _Extra2State extends State<Extra2> {
                             const Text(
                                 "Perhatikan tabel posisi terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2n.jpg'),
+                            Image.asset('assets/soal2n.png'),
                             const SizedBox(height: 10),
                             const Text(
                                 "Tabel di atas menunjukan perubahan posisi benda semakin besar setiap detiknya. Berdasarkan table di atas, berapakah perubahan posisi benda setiap detiknya?"),
@@ -335,7 +403,7 @@ class _Extra2State extends State<Extra2> {
                     ),
                     textPilihan(),
                     pilihanOption("A", "3 m/s", false, "2ba"),
-                    pilihanOption("B", "1.5 m/s", true, "3c"),
+                    pilihanOption("B", "1.5 m/s", true, "3a"),
                     pilihanOption("C", "0 m/s", false, "2ba"),
                     pilihanOption("D", "-1.5 m/s", false, "2ba"),
                     pilihanOption("E", "-3 m/s", false, "2ba"),
@@ -364,7 +432,7 @@ class _Extra2State extends State<Extra2> {
                             const Text(
                                 "Perhatikan tabel posisi terhadap waktu di bawah ini:"),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2n.jpg'),
+                            Image.asset('assets/soal2n.png'),
                             const SizedBox(height: 10),
                             const Text(
                                 "Tabel di atas menunjukan perubahan posisi benda setiap detiknya sebesar 1.5 ke arah depan.\nBerapakah kecepatan benda selama 2 detik?"),
@@ -500,7 +568,7 @@ class _Extra2State extends State<Extra2> {
                             const SizedBox(height: 10),
                             const Text(
                                 "Grafik di atas dapat diubah dalam bentuk tabel seperti di bawah ini:"),
-                            Image.asset('assets/soal2u.jpg'),
+                            Image.asset('assets/soal2u.png'),
                             const Text(
                                 "Bagaimanakah posisi benda setiap detiknya?"),
                           ],
@@ -508,9 +576,9 @@ class _Extra2State extends State<Extra2> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "Tetap", false, "4c"),
+                    pilihanOption("A", "Tetap", true, "4c"),
                     pilihanOption("B", "Berubah Semakin Besar.", false, "3c"),
-                    pilihanOption("C", "Berubah semakin kecil", true, "3c"),
+                    pilihanOption("C", "Berubah semakin kecil", false, "3c"),
                   ],
                 ),
               ),
@@ -545,11 +613,58 @@ class _Extra2State extends State<Extra2> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanGambar("A", "assets/soal2o.jpg", false, "4a"),
-                    pilihanGambar("B", "assets/soal2p.jpg", false, "4a"),
-                    pilihanGambar("C", "assets/soal2q.jpg", true, "5a"),
-                    pilihanGambar("D", "assets/soal2r.jpg", false, "4a"),
-                    pilihanGambar("E", "assets/soal2s.jpg", false, "4a"),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "A",
+                          "assets/soal2o.jpg",
+                          false,
+                          "4a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "B",
+                          "assets/soal2p.jpg",
+                          false,
+                          "4a",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "C",
+                          "assets/soal2q.jpg",
+                          true,
+                          "5a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "D",
+                          "assets/soal2r.jpg",
+                          false,
+                          "4a",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "E",
+                          "assets/soal2s.jpg",
+                          false,
+                          "4a",
+                        ),
+                      ),
+                      Flexible(flex: 1, child: Container()),
+                    ]),
                   ],
                 ),
               ),
@@ -614,7 +729,7 @@ class _Extra2State extends State<Extra2> {
                             const Text(
                                 "Perhatikan tabel posisi terhadap waktu di bawah ini."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2u.jpg'),
+                            Image.asset('assets/soal2u.png'),
                             const SizedBox(height: 10),
                             const Text(
                                 "Tabel di atas menunjukan perubahan posisi benda yang tetap setiap detiknya. Berdasarkan table di atas, berapakah perubahan posisi benda setiap detiknya?"),
@@ -692,7 +807,7 @@ class _Extra2State extends State<Extra2> {
                             const Text(
                                 "Di bawah ini adalah grafik posisi terhadap waktu  dengan gradien garis sebesar 0."),
                             const SizedBox(height: 10),
-                            Image.asset('assets/soal2u.jpg'),
+                            Image.asset('assets/soal2u.png'),
                             const SizedBox(height: 10),
                             const Text(
                                 "Tabel di atas menunjukan posisi benda yang tidak  berubah di setiap detiknya Berapakah kecepatan benda selama 2 detik?"),
@@ -701,11 +816,11 @@ class _Extra2State extends State<Extra2> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanOption("A", "3 m/s", false, "4ba"),
-                    pilihanOption("B", "1.5 m/s", false, "4ba"),
+                    pilihanOption("A", "3 m/s", false, "4ca"),
+                    pilihanOption("B", "1.5 m/s", false, "4ca"),
                     pilihanOption("C", "0 m/s", true, "5a"),
-                    pilihanOption("D", "-1.5 m/s", false, "4ba"),
-                    pilihanOption("E", "-3 m/s", false, "4ba"),
+                    pilihanOption("D", "-1.5 m/s", false, "4ca"),
+                    pilihanOption("E", "-3 m/s", false, "4ca"),
                   ],
                 ),
               ),
@@ -874,11 +989,58 @@ class _Extra2State extends State<Extra2> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanGambar("A", "assets/soal2o.jpg", false, "6a"),
-                    pilihanGambar("B", "assets/soal2p.jpg", false, "6a"),
-                    pilihanGambar("C", "assets/soal2q.jpg", true, "6a"),
-                    pilihanGambar("D", "assets/soal2r.jpg", true, "done"),
-                    pilihanGambar("E", "assets/soal2s.jpg", false, "6a"),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "A",
+                          "assets/soal2o.jpg",
+                          false,
+                          "6a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "B",
+                          "assets/soal2p.jpg",
+                          false,
+                          "6a",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "C",
+                          "assets/soal2q.jpg",
+                          true,
+                          "6a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "D",
+                          "assets/soal2r.jpg",
+                          true,
+                          "done",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "E",
+                          "assets/soal2s.jpg",
+                          false,
+                          "6a",
+                        ),
+                      ),
+                      Flexible(flex: 1, child: Container()),
+                    ]),
                   ],
                 ),
               ),
@@ -1177,7 +1339,7 @@ class _Extra2State extends State<Extra2> {
                 color: Colors.black,
                 thickness: 1,
               ),
-              Flexible(flex: 10, child: Image.asset(option)),
+              Flexible(flex: 10, child: Image.asset(jawaban)),
             ]),
           ),
         ),
