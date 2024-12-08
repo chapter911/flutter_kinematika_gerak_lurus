@@ -231,11 +231,58 @@ class _Extra3State extends State<Extra3> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanGambar("A", "assets/soal3g.jpg", false, "2b"),
-                    pilihanGambar("B", "assets/soal3h.jpg", false, "2b"),
-                    pilihanGambar("C", "assets/soal3i.jpg", true, "3a"),
-                    pilihanGambar("D", "assets/soal3j.jpg", false, "2b"),
-                    pilihanGambar("E", "assets/soal3k.jpg", false, "2b"),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "A",
+                          "assets/soal3g.jpg",
+                          false,
+                          "2b",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "B",
+                          "assets/soal3h.jpg",
+                          false,
+                          "2b",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "C",
+                          "assets/soal3i.jpg",
+                          true,
+                          "3a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "D",
+                          "assets/soal3j.jpg",
+                          false,
+                          "2b",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "E",
+                          "assets/soal3k.jpg",
+                          false,
+                          "2b",
+                        ),
+                      ),
+                      Flexible(flex: 1, child: Container()),
+                    ]),
                   ],
                 ),
               ),
@@ -550,11 +597,58 @@ class _Extra3State extends State<Extra3> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanGambar("A", "assets/soal3g.jpg", false, "4a"),
-                    pilihanGambar("B", "assets/soal3h.jpg", false, "4a"),
-                    pilihanGambar("C", "assets/soal3i.jpg", true, "5a"),
-                    pilihanGambar("D", "assets/soal3j.jpg", false, "4a"),
-                    pilihanGambar("E", "assets/soal3k.jpg", false, "4a"),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "A",
+                          "assets/soal3g.jpg",
+                          false,
+                          "4a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "B",
+                          "assets/soal3h.jpg",
+                          false,
+                          "4a",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "C",
+                          "assets/soal3i.jpg",
+                          true,
+                          "5a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "D",
+                          "assets/soal3j.jpg",
+                          false,
+                          "4a",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "E",
+                          "assets/soal3k.jpg",
+                          false,
+                          "4a",
+                        ),
+                      ),
+                      Flexible(flex: 1, child: Container()),
+                    ]),
                   ],
                 ),
               ),
@@ -870,11 +964,50 @@ class _Extra3State extends State<Extra3> {
                       ),
                     ),
                     textPilihan(),
-                    pilihanGambar("A", "assets/soal3g.jpg", false, "6a"),
-                    pilihanGambar("B", "assets/soal3h.jpg", false, "6a"),
-                    pilihanGambar("C", "assets/soal3i.jpg", false, "6a"),
-                    pilihanGambar("D", "assets/soal3j.jpg", true, "done"),
-                    pilihanGambar("E", "assets/soal3k.jpg", false, "6a"),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "A",
+                          "assets/soal3g.jpg",
+                          false,
+                          "6a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "B",
+                          "assets/soal3h.jpg",
+                          false,
+                          "6a",
+                        ),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                          "C",
+                          "assets/soal3i.jpg",
+                          false,
+                          "6a",
+                        ),
+                      ),
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                            "D", "assets/soal3j.jpg", true, "done"),
+                      ),
+                    ]),
+                    Row(children: [
+                      Flexible(
+                        flex: 1,
+                        child: pilihanGambar(
+                            "E", "assets/soal3k.jpg", false, "6a"),
+                      ),
+                      Flexible(flex: 1, child: Container()),
+                    ]),
                   ],
                 ),
               ),
@@ -1170,7 +1303,7 @@ class _Extra3State extends State<Extra3> {
                 color: Colors.black,
                 thickness: 1,
               ),
-              Flexible(flex: 10, child: Image.asset(option)),
+              Flexible(flex: 10, child: Image.asset(jawaban)),
             ]),
           ),
         ),
